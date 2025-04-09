@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  height: 400px;
+  background-color: #008000;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveBall 4s linear forwards;
+}
+
+@keyframes moveBall {
+  0% {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+
+  33% {
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+  }
+
+  66% {
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+  }
+
+  100% {
+    left: 0;
+    top: 100%;
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
