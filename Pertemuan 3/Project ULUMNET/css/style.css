@@ -1,0 +1,59 @@
+/* Tambahkan sedikit padding atas pada body untuk menghindari konten tertutup navbar fix */
+body {
+    padding-top: 56px;
+    /* Sesuaikan jika tinggi navbar berubah */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Pastikan footer menempel di bawah jika konten pendek */
+}
+
+section {
+    padding-top: 70px;
+    /* Padding atas untuk section */
+    padding-bottom: 50px;
+}
+
+.section-bg-light {
+    background-color: #f8f9fa;
+    /* Warna latar belakang ringan */
+}
+
+.icon-feature {
+    font-size: 3rem;
+    /* Ukuran ikon di fitur layanan */
+    color: var(--bs-primary);
+    /* Warna ikon primary bootstrap */
+}
+
+.card-pricing .card-header {
+    font-weight: bold;
+}
+
+/* Efek smooth scroll saat klik menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Pastikan iframe peta responsif */
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    /* Aspect ratio 16:9 */
+    position: relative;
+    height: 0;
+}
+
+/* Pastikan footer selalu di bawah */
+main {
+    flex: 1;
+}
