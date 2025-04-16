@@ -23,7 +23,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Perhatikan: Tanpa JS, tombol toggler tidak akan berfungsi -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#beranda"><i
@@ -85,43 +85,40 @@
     </section>
 
     <!-- Layanan Section -->
-    <section id="layanan" class="section-bg-light">
+    <section id="layanan" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Layanan Kami</h2>
-            <div class="row text-center">
+            <h2 class="text-center mb-5 fw-bold">Layanan Kami</h2>
+            <div class="row g-4 text-center">
                 <!-- Layanan 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <i class="bi bi-wifi icon-feature mb-3"></i>
-                            <h5 class="card-title">Jasa pasang Wifi Internet SUPER Cepat</h5>
-                            <p class="card-text">Nikmati koneksi internet super cepat dan stabil untuk rumah dan bisnis
-                                Anda.</p>
-                            <a href="#" class="btn btn-outline-primary mt-auto">Selengkapnya</a>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow rounded-4 p-3 border-0">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <i class="bi bi-wifi display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-semibold">Jasa Pasang Wifi Internet SUPER Cepat</h5>
+                            <p class="card-text text-muted">Nikmati koneksi internet super cepat dan stabil untuk rumah dan bisnis Anda.</p>
+                            <a href="#" class="btn btn-primary mt-auto rounded-pill px-4">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
                 <!-- Layanan 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <i class="bi bi-tv icon-feature mb-3"></i>
-                            <h5 class="card-title">Upgrade dan Downgrade Kecepatan Internet Wifi</h5>
-                            <p class="card-text">Layanan UPGRADE/DOWNGRADE Kecepatan Internet Kami Selalu ada di tangan
-                                anda.</p>
-                            <a href="#" class="btn btn-outline-primary mt-auto">Selengkapnya</a>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow rounded-4 p-3 border-0">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <i class="bi bi-tv display-4 text-success mb-3"></i>
+                            <h5 class="card-title fw-semibold">Upgrade dan Downgrade Kecepatan</h5>
+                            <p class="card-text text-muted">Layanan upgrade/downgrade kecepatan internet kami selalu ada di tangan Anda.</p>
+                            <a href="#" class="btn btn-success mt-auto rounded-pill px-4">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
                 <!-- Layanan 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <i class="bi bi-headset icon-feature mb-3"></i>
-                            <h5 class="card-title">Layanan Hosting Web dan Server</h5>
-                            <p class="card-text">Tim Teknis kami selalu siap melayani pemesanan Hosting Website Atau
-                                penyewaan Server Andal.</p>
-                            <a href="#" class="btn btn-outline-primary mt-auto">Selengkapnya</a>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow rounded-4 p-3 border-0">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <i class="bi bi-headset display-4 text-danger mb-3"></i>
+                            <h5 class="card-title fw-semibold">Layanan Hosting Web dan Server</h5>
+                            <p class="card-text text-muted">Kami menyediakan layanan hosting profesional dan server berkualitas.</p>
+                            <a href="#" class="btn btn-danger mt-auto rounded-pill px-4">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -129,144 +126,145 @@
         </div>
     </section>
 
+
     <!-- Pricelist Section -->
-    <section id="pricelist">
+    <section id="pricelist" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Paket Harga</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
-                <!-- Paket 1 -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm card-pricing text-center">
-                        <div class="card-header">Paket Basic (Normal Punch)</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title pricing-card-title">Rp 180.000 <small
-                                    class="text-muted fw-light">/bulan</small></h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>>> Simetris Up To 20 Mbps</li>
-                                <li>>> Layanan Call Center 24/7</li>
-                                <li>-</li>
-                                <li>-</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary mt-auto">Pilih Paket</button>
-                        </div>
-                    </div>
+          <h2 class="text-center mb-5 fw-bold">Paket Harga</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+
+            <!-- Paket 1 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0">
+                <div class="card-header bg-white fw-bold">Paket Basic (Normal Punch)</div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title pricing-card-title mb-3">Rp 180.000 <small class="text-muted fw-light">/bulan</small></h5>
+                  <ul class="list-unstyled mb-4 text-start">
+                    <li>✔ Simetris Up To 20 Mbps</li>
+                    <li>✔ Layanan Call Center 24/7</li>
+                    <li class="text-muted">✖ Fitur Tambahan</li>
+                    <li class="text-muted">✖ Fitur Tambahan</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-primary mt-auto rounded-pill">Pilih Paket</a>
                 </div>
-                <!-- Paket 2 -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm card-pricing text-center border-primary">
-                        <div class="card-header text-white bg-primary border-primary">Paket Standard (Intermmediate
-                            Punch)</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title pricing-card-title">Rp 280.000 <small
-                                    class="text-muted fw-light">/bulan</small></h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>>> Simetris Up To 30 Mbps</li>
-                                <li>>> Layanan Call Center 24/7</li>
-                                <li>>> Bundle Free Netflix & VIU 6 Bulan</li>
-                                <li>-</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary mt-auto">Pilih Paket</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Paket 3 -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm card-pricing text-center">
-                        <div class="card-header">Paket Pro (Heavy Punch)</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title pricing-card-title">Rp 400.000 <small
-                                    class="text-muted fw-light">/bulan</small></h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>>> Simetris Up To 50 Mbps</li>
-                                <li>>> Layanan Teknisi Live Caller</li>
-                                <li>>> Open Access To Fast-One Cloud 20GB 6 Bulan</li>
-                                <li>>> Custom Request for Access Point Device</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary mt-auto">Pilih Paket</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Paket 4 -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm card-pricing text-center">
-                        <div class="card-header">Paket Hemat (Ratio Punch)</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title pricing-card-title">Rp 150.000 <small
-                                    class="text-muted fw-light">/bulan</small></h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>>> Simetris Up To 20 Mbps (FUP 400 GB)</li>
-                                <li>-</li>
-                                <li>-</li>
-                                <li>-</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary mt-auto">Pilih Paket</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Paket 5 -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm card-pricing text-center">
-                        <div class="card-header">Paket Bisnis (Professonal Punch)</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title pricing-card-title">Rp 600.000 <small
-                                    class="text-muted fw-light">/bulan</small></h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>>> Simetris Up To 100 Mbps</li>
-                                <li>>> Layanan Teknisi Live On-Home 24/7</li>
-                                <li>>> Open Access Fast-One Cloud 50GB 2 Tahun</li>
-                                <li>>> Add-on Switch/Mikrotik Controller Device</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary mt-auto">Pilih Paket</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Paket 6 -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm card-pricing text-center">
-                        <div class="card-header">Paket Premium (SUPER Punch)</div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title pricing-card-title">Rp 850.000 <small
-                                    class="text-muted fw-light">/bulan</small></h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>>> Semua Fitur di Paket Bisnis</li>
-                                <li>>> Simetris Up To 300 Mbps</li>
-                                <li>>> Dedicated Line</li>
-                                <li>>> Premium Care Fast-One</li>
-                                <li>>> On-demand 3 Server Fast-One</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary mt-auto">Pilih Paket</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Paket 7 -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm card-pricing text-center">
-                        <div class="card-header text-white bg-primary border-primary">Paket Enterprise (Anomaly Punch)
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title pricing-card-title">Custom <small
-                                    class="text-muted fw-light">/hubungi</small></h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>>> Semua Fitur di Paket Premium</li>
-                                <li>>> Simetris Up To 1 Gbps</li>
-                                <li>>> Konsultasi Professional</li>
-                                <li>>> Fast-One Hosting 4 Tahun</li>
-                                <li>>> SLA Terjamin</li>
-                            </ul>
-                            <button type="button" class="btn btn-outline-primary mt-auto">Hubungi Lead Sales</button>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+
+            <!-- Paket 2 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-primary">
+                <div class="card-header bg-primary text-white fw-bold">Paket Standard (Intermediate Punch)</div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title pricing-card-title mb-3">Rp 280.000 <small class="text-muted fw-light">/bulan</small></h5>
+                  <ul class="list-unstyled mb-4 text-start">
+                    <li>✔ Simetris Up To 30 Mbps</li>
+                    <li>✔ Layanan Call Center 24/7</li>
+                    <li>✔ Free Netflix & VIU 6 Bulan</li>
+                    <li class="text-muted">✖ Fitur Tambahan</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary mt-auto rounded-pill">Pilih Paket</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paket 3 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0">
+                <div class="card-header bg-white fw-bold">Paket Pro (Heavy Punch)</div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title pricing-card-title mb-3">Rp 400.000 <small class="text-muted fw-light">/bulan</small></h5>
+                  <ul class="list-unstyled mb-4 text-start">
+                    <li>✔ Simetris Up To 50 Mbps</li>
+                    <li>✔ Teknisi Live Caller</li>
+                    <li>✔ Akses Cloud 20GB (6 Bulan)</li>
+                    <li>✔ Custom Access Point Device</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-primary mt-auto rounded-pill">Pilih Paket</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paket 4 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0">
+                <div class="card-header bg-white fw-bold">Paket Hemat (Ratio Punch)</div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title pricing-card-title mb-3">Rp 150.000 <small class="text-muted fw-light">/bulan</small></h5>
+                  <ul class="list-unstyled mb-4 text-start">
+                    <li>✔ Simetris Up To 20 Mbps (FUP 400 GB)</li>
+                    <li class="text-muted">✖ Fitur Tambahan</li>
+                    <li class="text-muted">✖ Fitur Tambahan</li>
+                    <li class="text-muted">✖ Fitur Tambahan</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-primary mt-auto rounded-pill">Pilih Paket</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paket 5 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0">
+                <div class="card-header bg-white fw-bold">Paket Bisnis (Professional Punch)</div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title pricing-card-title mb-3">Rp 600.000 <small class="text-muted fw-light">/bulan</small></h5>
+                  <ul class="list-unstyled mb-4 text-start">
+                    <li>✔ Simetris Up To 100 Mbps</li>
+                    <li>✔ Teknisi On-Home 24/7</li>
+                    <li>✔ Akses Cloud 50GB (2 Tahun)</li>
+                    <li>✔ Add-on Switch/Mikrotik Controller</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-primary mt-auto rounded-pill">Pilih Paket</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paket 6 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-0">
+                <div class="card-header bg-white fw-bold">Paket Premium (SUPER Punch)</div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title pricing-card-title mb-3">Rp 850.000 <small class="text-muted fw-light">/bulan</small></h5>
+                  <ul class="list-unstyled mb-4 text-start">
+                    <li>✔ Semua Fitur Paket Bisnis</li>
+                    <li>✔ Simetris Up To 300 Mbps</li>
+                    <li>✔ Dedicated Line</li>
+                    <li>✔ Premium Care Fast-One</li>
+                    <li>✔ On-demand 3 Server Fast-One</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-primary mt-auto rounded-pill">Pilih Paket</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paket 7 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm text-center border-primary">
+                <div class="card-header bg-primary text-white fw-bold">Paket Enterprise (Anomaly Punch)</div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title pricing-card-title mb-3">Custom <small class="text-muted fw-light">/hubungi</small></h5>
+                  <ul class="list-unstyled mb-4 text-start">
+                    <li>✔ Semua Fitur Paket Premium</li>
+                    <li>✔ Simetris Up To 1 Gbps</li>
+                    <li>✔ Konsultasi Professional</li>
+                    <li>✔ Fast-One Hosting 4 Tahun</li>
+                    <li>✔ SLA Terjamin</li>
+                  </ul>
+                  <a href="#" class="btn btn-outline-primary mt-auto rounded-pill">Hubungi Sales</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-    </section>
+      </section>
+
 
     <section id="kontak" class="section-bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Hubungi Kami</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form>
+                    <form> <!-- Perhatikan: Tanpa JS/Backend, form ini tidak akan mengirim data kemana pun -->
                         <div class="mb-3">
                             <label for="namaKontak" class="form-label">Nama Lengkap</label>
                             <input type="text" class="form-control" id="namaKontak" name="nama" required>
@@ -314,8 +312,7 @@
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.41020730345858!2d112.6505771092383!3d-7.17636905434024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd80188f0abee73%3A0x7a3993d71376713!2sGUSI!5e0!3m2!1sid!2sid!4v1744345425825!5m2!1sid!2sid"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- Tag </iframe> penutup ganda dihapus dari sini -->
                     </div>
                 </div>
             </div>
@@ -325,13 +322,9 @@
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <div class="container">
             <p class="mb-0">© 2025 FAST ONE. All Rights Reserved.</p>
-            <span style="color: #e25555;">made with &#9829;</span>
+            <span style="color: #e25555;">made with ♥</span>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

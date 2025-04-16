@@ -30,7 +30,7 @@ section {
     font-weight: bold;
 }
 
-/* Efek smooth scroll saat klik menu */
+/* Efek smooth scroll saat klik menu (Ini adalah fitur CSS, bukan JS) */
 html {
     scroll-behavior: smooth;
 }
