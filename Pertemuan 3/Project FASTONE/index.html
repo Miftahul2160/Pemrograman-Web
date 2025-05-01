@@ -23,7 +23,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#beranda"><i
                 class="bi bi-house-door-fill me-1"></i>Beranda</a>
@@ -44,11 +44,17 @@
           <li class="nav-item">
             <a class="nav-link" href="#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a>
           </li>
+          <li class="nav-item ms-lg-2">
+            <button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode">
+              <i class="bi bi-moon-fill"></i> 
+            </button>
+         </li>
         </ul>
       </div>
     </div>
   </nav>
 
+<main>
   <section id="beranda" class="text-center"
     style="background-image: url(images/laptop-internet.jpg) ; background-size: cover; height: 100vh; color: white;">
     <div class="container">
@@ -69,7 +75,7 @@
   <section id="tentang-kita">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6 slide-in-left">
           <h2 class="mb-4">Tentang Kita</h2>
           <p>Visi Fast One: internet di indonesia dapat dikelola dengan Efektif dan Handal, dengan itu Kami Fast One
             menyediakan
@@ -77,21 +83,22 @@
           <p>Misi Fast One : menyediakan solusi yang handal, efisien, dan terjangkau untuk Akses internet diseluruh
             negeri dan juga menjadi New-Rookie di industri broadband Internet dedicated.</p>
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center slide-in-right"> 
           <img src="images/about-us.jpg" alt="Tentang Kami" class="img-fluid rounded shadow">
         </div>
       </div>
     </div>
   </section>
+</main>
 
   <!-- Layanan Section -->
   <section id="layanan" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-5 fw-bold">Layanan Kami</h2>
+      <h2 class="text-center mb-5 fw-bold slide-in-left">Layanan Kami</h2>
       <div class="row g-4 text-center">
         <!-- Layanan 1 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow rounded-4 p-3 border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-right">
             <div class="card-body d-flex flex-column align-items-center text-center">
               <i class="bi bi-wifi display-4 text-primary mb-3"></i>
               <h5 class="card-title fw-semibold">Jasa Pasang Wifi Internet SUPER Cepat</h5>
@@ -103,7 +110,7 @@
         </div>
         <!-- Layanan 2 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow rounded-4 p-3 border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-right">
             <div class="card-body d-flex flex-column align-items-center text-center">
               <i class="bi bi-tv display-4 text-success mb-3"></i>
               <h5 class="card-title fw-semibold">Upgrade dan Downgrade Kecepatan</h5>
@@ -115,11 +122,11 @@
         </div>
         <!-- Layanan 3 -->
         <div class="col-md-4">
-          <div class="card h-100 shadow rounded-4 p-3 border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-right">
             <div class="card-body d-flex flex-column align-items-center text-center">
               <i class="bi bi-headset display-4 text-danger mb-3"></i>
-              <h5 class="card-title fw-semibold">Layanan Hosting Web dan Server</h5>
-              <p class="card-text text-muted">Kami menyediakan layanan hosting profesional dan server berkualitas.</p>
+              <h5 class="card-title fw-semibold">Layanan Konsultasi Jaringan Wifi</h5>
+              <p class="card-text text-muted">Kami menyediakan layanan Konsultasi Jaringan Wifi Terpadu yang Professional dengan Analisis Akurat.</p>
               <a href="#" class="btn btn-danger mt-auto rounded-pill px-4">Selengkapnya</a>
             </div>
           </div>
@@ -128,6 +135,7 @@
     </div>
   </section>
 
+<main>
   <section id="pricelist" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-5 fw-bold">Paket Core FAST ONE</h2>
@@ -135,7 +143,7 @@
 
         <!-- Paket 1 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-left">
             <div class="card-header bg-white fw-bold">Paket Basic (Normal Punch)</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 180.000 <small
@@ -152,8 +160,8 @@
 
         <!-- Paket 2 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-primary">
-            <div class="card-header bg-primary text-white fw-bold">Paket Standard (Intermediate Punch)</div>
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-left">
+            <div class="card-header bg-white fw-bold">Paket Standard (Intermediate Punch)</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 280.000 <small
                   class="text-muted fw-light">/bulan</small></h5>
@@ -169,7 +177,7 @@
 
         <!-- Paket 3 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-left">
             <div class="card-header bg-white fw-bold">Paket Pro (Heavy Punch)</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 400.000 <small
@@ -187,7 +195,7 @@
 
         <!-- Paket 4 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-left">
             <div class="card-header bg-white fw-bold">Paket Hemat (Ratio Punch)</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 150.000 <small
@@ -203,7 +211,7 @@
 
         <!-- Paket 5 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-right">
             <div class="card-header bg-white fw-bold">Paket Bisnis (Professional Punch)</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 600.000 <small
@@ -221,7 +229,7 @@
 
         <!-- Paket 6 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-right">
             <div class="card-header bg-white fw-bold">Paket Premium (SUPER Punch)</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 850.000 <small
@@ -240,7 +248,7 @@
 
         <!-- Paket 7 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-primary">
+          <div class="card h-100 shadow-sm text-center border-primary slide-in-right">
             <div class="card-header bg-primary text-white fw-bold">Paket Enterprise (Anomaly Punch)</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Custom <small class="text-muted fw-light">/hubungi</small>
@@ -267,7 +275,7 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
         <!-- Paket 1 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-left">
             <div class="card-header bg-white fw-bold">Konsultasi Pemasangan Wifi</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 500.000<small class="text-muted fw-light">/Konsultasi</small>
@@ -284,7 +292,7 @@
         </div>
         <!-- Paket 2 -->
         <div class="col">
-          <div class="card h-100 shadow-sm text-center border-0">
+          <div class="card h-100 shadow rounded-4 p-3 border-0 slide-in-right">
             <div class="card-header bg-white fw-bold">Konsultasi Troubleshooting Wifi</div>
             <div class="card-body d-flex flex-column">
               <h5 class="card-title pricing-card-title mb-3">Rp 750.000<small class="text-muted fw-light">/Konsultasi</small>
@@ -301,6 +309,7 @@
           </div>
         </div>
   </section>
+</main>
 
   <section id="kontak" class="section-bg-light">
     <div class="container">
@@ -367,6 +376,7 @@
       <span style="color: #e25555;">made with ♥</span>
     </div>
   </footer>
+  <script src="script.js"></script> 
 </body>
 
 </html>

@@ -1,41 +1,152 @@
-/* Tambahkan sedikit padding atas pada body untuk menghindari konten tertutup navbar fix */
+body, .bg-white, .bg-light, .card, .navbar, footer, input, textarea {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212; 
+    color: #e0e0e0; 
+    --bs-body-color: #e0e0e0; 
+    --bs-body-bg: #121212;   
+    --bs-secondary-color: rgba(224, 224, 224, 0.75); 
+}
+
+body.dark-mode .navbar.bg-white {
+    background-color: #1f1f1f !important; 
+    border-bottom: 1px solid #333; 
+}
+body.dark-mode .navbar .navbar-brand,
+body.dark-mode .navbar .nav-link {
+    color: #e0e0e0; 
+}
+body.dark-mode .navbar .nav-link:hover,
+body.dark-mode .navbar .nav-link.active {
+    color: #ffffff; 
+}
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1) brightness(2);
+}
+
+body.dark-mode .bg-light {
+    background-color: #1f1f1f !important; 
+}
+body.dark-mode .bg-white {
+     background-color: #1f1f1f !important; 
+}
+body.dark-mode .section-bg-light {
+    background-color: #1f1f1f !important; 
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a; 
+    border-color: #444; 
+    color: #e0e0e0; 
+}
+body.dark-mode .card .card-header {
+    background-color: #333; 
+    border-bottom-color: #444;
+}
+body.dark-mode .card .text-muted {
+    color: rgba(224, 224, 224, 0.65) !important; 
+}
+body.dark-mode .card .text-primary { color: #6ca0fc !important; }
+body.dark-mode .card .text-success { color: #60d68a !important; }
+body.dark-mode .card .text-danger { color: #ff7b7b !important; }
+body.dark-mode .card .btn-outline-primary {
+    color: #6ca0fc;
+    border-color: #6ca0fc;
+}
+body.dark-mode .card .btn-outline-primary:hover {
+    background-color: #6ca0fc;
+    color: #121212;
+}
+
+/* Forms Dark */
+body.dark-mode .form-control {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+}
+body.dark-mode .form-control::placeholder {
+    color: rgba(224, 224, 224, 0.5);
+}
+body.dark-mode .form-control:focus {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #6ca0fc; 
+    box-shadow: 0 0 0 0.25rem rgba(108, 160, 252, 0.25);
+}
+body.dark-mode .form-label {
+    color: #e0e0e0;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #0d6efd; 
+    border-color: #0d6efd;
+    color: #fff;
+}
+body.dark-mode .btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+body.dark-mode .btn-outline-light:hover {
+    color: #121212;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+body.dark-mode footer.bg-dark {
+    background-color: #1f1f1f !important; 
+    color: #a0a0a0; 
+}
+body.dark-mode footer span {
+     color: #e07070; 
+}
+
+body.dark-mode #beranda h1,
+body.dark-mode #beranda p.lead {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .map-responsive iframe {
+    filter: invert(90%) hue-rotate(180deg); 
+}
+
+body.dark-mode #darkModeToggle i::before {
+  content: "\f5a1"; 
+}
+#darkModeToggle i::before {
+  content: "\f494"; 
+  font-family: "bootstrap-icons";
+}
 body {
     padding-top: 56px;
-    /* Sesuaikan jika tinggi navbar berubah */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Pastikan footer menempel di bawah jika konten pendek */
 }
 
 section {
     padding-top: 70px;
-    /* Padding atas untuk section */
     padding-bottom: 50px;
 }
 
 .section-bg-light {
     background-color: #f8f9fa;
-    /* Warna latar belakang ringan */
 }
 
 .icon-feature {
     font-size: 3rem;
-    /* Ukuran ikon di fitur layanan */
     color: var(--bs-primary);
-    /* Warna ikon primary bootstrap */
 }
 
 .card-pricing .card-header {
     font-weight: bold;
 }
 
-/* Efek smooth scroll saat klik menu (Ini adalah fitur CSS, bukan JS) */
 html {
     scroll-behavior: smooth;
 }
 
-/* Pastikan iframe peta responsif */
 .map-responsive iframe {
     position: absolute;
     top: 0;
@@ -48,12 +159,62 @@ html {
 .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
-    /* Aspect ratio 16:9 */
     position: relative;
     height: 0;
 }
 
-/* Pastikan footer selalu di bawah */
 main {
     flex: 1;
+}
+
+.slide-in-left,
+.slide-in-right {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-left {
+  transform: translateX(-40px); 
+}
+
+.slide-in-right {
+  transform: translateX(40px); 
+}
+
+.slide-in-left.is-visible,
+.slide-in-right.is-visible {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+.card.slide-in-left:nth-child(2),
+.card.slide-in-right:nth-child(2) {
+    transition-delay: 0.1s;
+}
+.card.slide-in-left:nth-child(3),
+.card.slide-in-right:nth-child(3) {
+    transition-delay: 0.2s;
+}
+.card.slide-in-left:nth-child(4),
+.card.slide-in-right:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; 
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
