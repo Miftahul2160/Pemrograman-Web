@@ -17,18 +17,18 @@ function formatTime(time, length) {
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
-    ctx.font = 'bold 100px Arial';
+    ctx.font = '70px Arial';
     ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
+    ctx.textBaseline = 'center';
     
     ctx.fillStyle = '#00c507';
-    ctx.fillText(formatTime(seconds, 3), canvas.width/2 - 100, canvas.height/2);
+    ctx.fillText(formatTime(seconds, 3), canvas.width/2 - 75, canvas.height/2);
     
     ctx.fillStyle = 'black';
     ctx.fillText(':', canvas.width/2, canvas.height/2);
     
     ctx.fillStyle = '#f51c1c';
-    ctx.fillText(formatTime(milliseconds, 2), canvas.width/2 + 72, canvas.height/2);
+    ctx.fillText(formatTime(milliseconds, 2), canvas.width/2 + 55, canvas.height/2);
 }
 
 function update(timestamp) {
