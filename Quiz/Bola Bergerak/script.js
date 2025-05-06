@@ -1,20 +1,19 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-
-// Inisialisasi bola
 const ball = {
   radius: 20,
-  x: 0 + 10, // Muncul dari tepi kiri
+  x: 0 + 10, 
   y: canvas.height / 2,
   dx: 1,
   dy: 1,
-  direction: 'right' // 'right' → 'down' → 'left' → 'done'
+  direction: 'right' 
 };
 
 function drawBall() {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
   ctx.fillStyle = 'white';
+
   ctx.fill();
   ctx.closePath();
 }
@@ -24,6 +23,10 @@ function clearCanvas() {
 }
 
 function updateBall() {
+  if (!canvas.width || !canvas.height) {
+    console.warn("Ukuran canvas belum siap saat updateBall dijalankan.");
+  }
+
   switch (ball.direction) {
     case 'right':
       ball.x += ball.dx;
@@ -39,8 +42,8 @@ function updateBall() {
       break;
     case 'left':
       ball.x -= ball.dx;
-      if (ball.x - ball.radius <= 0) {
-        ball.direction = 'done'; // Selesai, bola menghilang
+      if (ball.x + ball.radius <= 0) {
+        ball.direction = 'done'; 
       }
       break;
     case 'done':
@@ -48,6 +51,7 @@ function updateBall() {
       return;
   }
 }
+let animationId;
 
 function animate() {
   clearCanvas();
@@ -57,5 +61,4 @@ function animate() {
     animationId = requestAnimationFrame(animate);
   }
 }
-
-let animationId = requestAnimationFrame(animate);
+animationId = requestAnimationFrame(animate);
