@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail Paket Basic - FAST ONE</title> 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Detail Paket Basic - FAST ONE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../css/style.css"> 
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="../index.html#beranda"> 
+      <a class="navbar-brand" href="../index.html#beranda">
         <img src="../images/logo.png" alt="Logo Brand" width="30" height="24" class="d-inline-block align-text-top me-2">
         FAST ONE
       </a>
@@ -24,29 +23,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a>
-          </li>
-          <li class="nav-item ms-lg-2">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode">
-              <i class="bi bi-moon-fill"></i>
-            </button>
-         </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle"><i class="bi bi-moon-fill"></i></button></li>
         </ul>
       </div>
     </div>
@@ -55,84 +38,96 @@
   <main class="container mt-5 pt-5">
     <section id="detail-paket" class="py-5">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-9 mx-auto"> <!-- Sedikit lebih lebar untuk memberi ruang -->
             <div class="mb-4">
-                <a href="javascript:history.back()" class="btn btn-outline-secondary rounded-pill">
+                <a href="javascript:history.back()" class="btn btn-sm btn-outline-secondary rounded-pill">
                   <i class="bi bi-arrow-left me-1"></i>Kembali
                 </a>
+            </div>
+
+          <!-- Judul dan Harga Dipisah Lebih Jelas -->
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-2">Paket Basic (Normal Punch)</h1>
+            <p class="display-6 text-primary fw-light mb-0">Rp 180.000 <small class="text-muted fs-5">/bulan</small></p>
+          </div>
+
+          <!-- Hero Block untuk Gambar dan Deskripsi Awal -->
+          <div class="row mb-5 p-4 p-md-5 bg-light rounded shadow-sm align-items-center">
+            <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <img src="../images/paket-basic-hero.jpg" alt="Internet Cepat Paket Basic" class="img-fluid rounded shadow-lg">
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h3 class="fw-semibold mb-3">Solusi Internet Handal untuk Keseharian Anda</h3>
+                <p class="lead">Nikmati koneksi internet stabil dan handal untuk kebutuhan sehari-hari Anda. Paket Basic dirancang untuk pengguna rumahan yang membutuhkan internet untuk browsing, media sosial, streaming musik, dan video berkualitas standar.</p>
+            </div>
+          </div>
+
+          <!-- Setiap Bagian sebagai "Kartu" -->
+          <div class="mb-5 p-4 border rounded shadow-sm">
+            <h2 class="mb-3 fw-semibold h4">Fitur Unggulan Paket Basic:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 20 Mbps:</strong> Video call lancar & upload cepat.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Layanan Call Center 24/7:</strong> Bantuan kapan saja.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Free Disney Hotstar 3 Bulan:</strong> Hiburan tanpa batas.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Tanpa Batas Kuota (FUP Wajar):</strong> Internet sepuasnya.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Gratis Biaya Instalasi*:</strong> Hemat biaya awal.</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100"> <!-- h-100 untuk tinggi sama jika bersebelahan -->
+                <h2 class="mb-3 fw-semibold h4">Paket Ini Cocok Untuk:</h2>
+                <ul class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-person-check-fill text-info me-2"></i>Pengguna rumahan (1-3 orang).</li>
+                  <li class="mb-2"><i class="bi bi-globe2 text-info me-2"></i>Browsing, email, media sosial.</li>
+                  <li class="mb-2"><i class="bi bi-film text-info me-2"></i>Streaming musik & video SD/HD.</li>
+                  <li class="mb-2"><i class="bi bi-laptop text-info me-2"></i>Belajar/bekerja dari rumah (standar).</li>
+                  <li class="mb-2"><i class="bi bi-controller text-info me-2"></i>Gaming kasual.</li>
+                </ul>
               </div>
-          <h1 class="display-5 fw-bold mb-4">Paket Basic (Normal Punch)</h1>
-          <p class="lead text-muted mb-4">Rp 180.000 <small class="fw-light">/bulan</small></p>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Syarat dan Ketentuan:</h2>
+                <ol class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-calendar-check-fill text-muted me-2"></i>Periode kontrak minimal 12 bulan.</li>
+                  <li class="mb-2"><i class="bi bi-router-fill text-muted me-2"></i>Biaya perangkat mungkin berlaku.</li>
+                  <li class="mb-2"><i class="bi bi-credit-card-2-front-fill text-muted me-2"></i>Pembayaran tagihan maks. tgl 10.</li>
+                  <li class="mb-2"><i class="bi bi-link-45deg text-muted me-2"></i><a href="syarat-ketentuan.html#paket-basic" target="_blank" class="text-decoration-none">Detail S&K lengkap</a>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="alert alert-warning my-5 shadow-sm d-flex align-items-center" role="alert">
+            <i class="bi bi-exclamation-triangle-fill fs-4 me-3"></i>
+            <div>
+              <strong>Perhatian:</strong> Kecepatan "Up To" berarti kecepatan maksimal yang bisa didapatkan, tergantung kondisi jaringan dan perangkat Anda.
+            </div>
+          </div>
 
           <div class="mb-5">
-            <img src="../images/paket-basic-hero.jpg" alt="Internet Cepat Paket Basic" class="img-fluid rounded shadow mb-3"> <!-- Ganti gambar -->
-            <p>Nikmati koneksi internet stabil dan handal untuk kebutuhan sehari-hari Anda. Paket Basic dirancang untuk pengguna rumahan yang membutuhkan internet untuk browsing, media sosial, streaming musik, dan video berkualitas standar.</p>
-          </div>
-
-          <h2 class="mb-3">Fitur Unggulan:</h2>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 20 Mbps:</strong> Kecepatan download dan upload yang seimbang hingga 20 Mbps, ideal untuk video call lancar dan upload file cepat.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Layanan Call Center 24/7:</strong> Tim support kami siap membantu Anda kapan saja, siang maupun malam, jika mengalami kendala.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Free Disney Hotstar 3 Bulan:</strong> Akses gratis ke ribuan film dan serial favorit di Disney Hotstar selama 3 bulan pertama.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Tanpa Batas Kuota (FUP Berlaku Wajar):</strong> Nikmati internet sepuasnya tanpa khawatir kehabisan kuota. Kebijakan Penggunaan Wajar (FUP) mungkin berlaku untuk menjaga kualitas layanan bagi semua pengguna.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Gratis Biaya Instalasi*:</strong> Untuk area tertentu dan periode promo, nikmati instalasi gratis. (*Syarat dan ketentuan berlaku).</li>
-          </ul>
-
-          <h2 class="mb-3">Paket Ini Cocok Untuk:</h2>
-          <ul>
-            <li>Pengguna internet rumahan (1-3 orang).</li>
-            <li>Browsing web, cek email, dan media sosial.</li>
-            <li>Streaming musik dan video kualitas SD/HD.</li>
-            <li>Belajar atau bekerja dari rumah dengan kebutuhan standar.</li>
-            <li>Gaming kasual.</li>
-          </ul>
-
-          <div class="alert alert-info my-4" role="alert">
-            <i class="bi bi-info-circle-fill me-2"></i><strong>Perhatian:</strong> Kecepatan "Up To" berarti kecepatan maksimal yang bisa didapatkan, tergantung kondisi jaringan dan perangkat.
-          </div>
-
-          <h2 class="mb-3">Syarat dan Ketentuan:</h2>
-          <ol class="mb-4">
-            <li>Periode kontrak minimal 12 bulan.</li>
-            <li>Biaya perangkat (modem/router) mungkin berlaku atau disewakan.</li>
-            <li>Pembayaran tagihan dilakukan paling lambat tanggal 10 setiap bulannya.</li>
-            <li>Detail lengkap Syarat dan Ketentuan dapat dilihat <a href="syarat-ketentuan.html#paket-basic" target="_blank">di sini</a>. (Buat halaman S&K terpisah jika perlu).</li>
-          </ol>
-
-          <h2 class="mb-3">FAQ - Paket Basic</h2>
-          <div class="accordion mb-5" id="faqPaketBasic">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Apa itu kecepatan simetris?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqPaketBasic">
-                <div class="accordion-body">
-                  Kecepatan simetris berarti kecepatan download (mengunduh data) dan upload (mengunggah data) Anda sama. Ini sangat berguna untuk aktivitas seperti video conference, mengirim file besar, atau bermain game online yang membutuhkan respons cepat.
-                </div>
+            <h2 class="mb-3 fw-semibold h4 text-center">FAQ - Paket Basic</h2>
+            <div class="accordion accordion-flush shadow-sm border rounded" id="faqPaketBasic">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Apa itu kecepatan simetris?</button></h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqPaketBasic"><div class="accordion-body">Kecepatan simetris berarti kecepatan download dan upload Anda sama. Ini sangat berguna untuk video conference, mengirim file besar, atau bermain game online.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Bagaimana cara klaim Free Disney Hotstar?</button></h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqPaketBasic"><div class="accordion-body">Setelah aktivasi, Anda akan menerima kode voucher atau instruksi via email/SMS untuk mengaktifkan langganan Disney Hotstar Anda.</div></div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Bagaimana cara klaim Free Disney Hotstar?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqPaketBasic">
-                <div class="accordion-body">
-                  Setelah aktivasi layanan, Anda akan menerima kode voucher atau instruksi melalui email/SMS untuk mengaktifkan langganan Disney Hotstar Anda.
-                </div>
-              </div>
-            </div>
-            <!-- Tambahkan FAQ lainnya -->
           </div>
 
-          <div class="text-center">
-            <h3 class="mb-3">Tertarik dengan Paket Basic?</h3>
-            <a href="index.html#kontak" class="btn btn-primary btn-lg me-2 mb-2"><i class="bi bi-telephone-fill me-2"></i>Hubungi Sales Kami</a>
-            <button type="button" class="btn btn-success btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#modalCekJangkauan">
-              <i class="bi bi-geo-alt-fill me-2"></i>Cek Jangkauan Area
+          <div class="text-center p-4 p-md-5">
+            <h3 class="mb-3 fw-semibold">Siap Menikmati Internet Cepat & Stabil?</h3>
+            <p class="mb-4">Jangan ragu untuk menghubungi tim sales kami atau cek jangkauan layanan di area Anda.</p>
+            <a href="index.html#kontak" class="btn btn-primary btn-lg me-lg-2 mb-2 mb-lg-0 shadow-sm"><i class="bi bi-telephone-outbound-fill me-2"></i>Hubungi Sales</a>
+            <button type="button" class="btn btn-success btn-lg mb-2 mb-lg-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalCekJangkauan">
+              <i class="bi bi-map-fill me-2"></i>Cek Jangkauan
             </button>
           </div>
         </div>
@@ -140,34 +135,11 @@
     </section>
   </main>
 
-  <div class="modal fade" id="modalCekJangkauan" tabindex="-1" aria-labelledby="modalCekJangkauanLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCekJangkauanLabel">Cek Ketersediaan Layanan</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Silakan masukkan alamat lengkap Anda untuk mengecek apakah layanan FAST ONE sudah tersedia di area Anda.</p>
-          <form>
-            <div class="mb-3">
-              <label for="alamatLengkap" class="form-label">Alamat Lengkap</label>
-              <textarea class="form-control" id="alamatLengkap" rows="3" placeholder="Contoh: Jl. Merdeka No. 10, Kel. Suka Maju, Kec. Bahagia, Kota Senang"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Cek Sekarang</button>
-          </form>
-          <p class="mt-3 text-center text-muted"><small>Atau hubungi tim kami untuk bantuan pengecekan.</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Modal (tidak diubah) -->
+  <div class="modal fade" id="modalCekJangkauan" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Cek Ketersediaan Layanan</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Masukkan alamat lengkap Anda:</p><form><div class="mb-3"><label for="alamatLengkap" class="form-label">Alamat Lengkap</label><textarea class="form-control" id="alamatLengkap" rows="3" placeholder="Contoh: Jl. Merdeka No. 10..."></textarea></div><button type="submit" class="btn btn-primary w-100">Cek Sekarang</button></form><p class="mt-3 text-center text-muted"><small>Atau hubungi tim kami.</small></p></div></div></div></div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <footer class="bg-dark text-white text-center py-3 mt-auto"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../script.js"></script>
 </body>
 </html>

@@ -21,29 +21,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a>
-          </li>
-          <li class="nav-item ms-lg-2">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode">
-              <i class="bi bi-moon-fill"></i>
-            </button>
-         </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-fill"></i></button></li>
         </ul>
       </div>
     </div>
@@ -52,86 +36,96 @@
   <main class="container mt-5 pt-5">
     <section id="detail-paket" class="py-5">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-9 mx-auto"> <!-- Sedikit lebih lebar -->
 
           <div class="mb-4">
-            <a href="javascript:history.back()" class="btn btn-outline-secondary rounded-pill">
+            <a href="javascript:history.back()" class="btn btn-sm btn-outline-secondary rounded-pill"> <!-- btn-sm -->
               <i class="bi bi-arrow-left me-1"></i>Kembali
             </a>
           </div>
 
-          <h1 class="display-5 fw-bold mb-4">Paket Standard (Intermediate Punch)</h1>
-          <p class="lead text-muted mb-4">Rp 280.000 <small class="fw-light">/bulan</small></p>
+          <!-- Judul dan Harga Dipisah Lebih Jelas -->
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-2">Paket Standard (Intermediate Punch)</h1>
+            <p class="display-6 text-primary fw-light mb-0">Rp 280.000 <small class="text-muted fs-5">/bulan</small></p>
+          </div>
+
+          <!-- Hero Block untuk Gambar dan Deskripsi Awal -->
+          <div class="row mb-5 p-4 p-md-5 bg-light rounded shadow-sm align-items-center">
+            <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <img src="../images/paket-standard-hero.jpg" alt="Paket Internet Standard FAST ONE" class="img-fluid rounded shadow-lg"> <!-- GANTI GAMBAR -->
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h3 class="fw-semibold mb-3">Koneksi Super Cepat untuk Produktivitas & Hiburan</h3>
+                <p class="lead">Paket Standard adalah pilihan ideal untuk keluarga modern atau para profesional yang bekerja dari rumah. Nikmati kecepatan yang lebih tinggi untuk streaming HD, video conference tanpa hambatan, dan pengalaman online yang lebih kaya.</p>
+            </div>
+          </div>
+
+          <!-- Setiap Bagian sebagai "Kartu" -->
+          <div class="mb-5 p-4 border rounded shadow-sm">
+            <h2 class="mb-3 fw-semibold h4">Fitur Unggulan Paket Standard:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 30 Mbps:</strong> Streaming HD & WFH lancar.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Layanan Call Center 24/7:</strong> Dukungan teknis prioritas.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Free Netflix & VIU 6 Bulan:</strong> Maraton film & serial favorit.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Internet Stabil untuk Produktivitas:</strong> Koneksi handal & cepat.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Tanpa Batas Kuota (FUP Wajar):</strong> Internet tanpa khawatir.</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Paket Ini Cocok Untuk:</h2>
+                <ul class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-people-fill text-info me-2"></i>Keluarga dengan multi-pengguna.</li>
+                  <li class="mb-2"><i class="bi bi-briefcase-fill text-info me-2"></i>Profesional WFH & meeting online.</li>
+                  <li class="mb-2"><i class="bi bi-tv-fill text-info me-2"></i>Streaming film & serial HD/Full HD.</li>
+                  <li class="mb-2"><i class="bi bi-joystick text-info me-2"></i>Gaming online (latensi sedang).</li>
+                  <li class="mb-2"><i class="bi bi-hdd-stack-fill text-info me-2"></i>Penggunaan 3-5 perangkat simultan.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Syarat dan Ketentuan:</h2>
+                <ol class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-calendar-check-fill text-muted me-2"></i>Periode kontrak minimal 12 bulan.</li>
+                  <li class="mb-2"><i class="bi bi-router-fill text-muted me-2"></i>Biaya perangkat mungkin berlaku.</li>
+                  <li class="mb-2"><i class="bi bi-ticket-detailed-fill text-muted me-2"></i>Free Netflix & VIU tunduk S&K.</li>
+                  <li class="mb-2"><i class="bi bi-link-45deg text-muted me-2"></i><a href="syarat-ketentuan.html#paket-standard" target="_blank" class="text-decoration-none">Detail S&K lengkap</a>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-warning my-5 shadow-sm d-flex align-items-center" role="alert"> <!-- Diubah menjadi alert-warning -->
+            <i class="bi bi-exclamation-triangle-fill fs-4 me-3"></i>
+            <div>
+              <strong>Tips:</strong> Untuk pengalaman streaming terbaik, pastikan perangkat Anda mendukung resolusi yang diinginkan dan terhubung dengan sinyal WiFi yang kuat.
+            </div>
+          </div>
 
           <div class="mb-5">
-            <img src="../images/paket-standard-hero.jpg" alt="Paket Internet Standard FAST ONE" class="img-fluid rounded shadow mb-3"> <!-- GANTI GAMBAR -->
-            <p>Paket Standard adalah pilihan ideal untuk keluarga modern atau para profesional yang bekerja dari rumah. Nikmati kecepatan yang lebih tinggi untuk streaming HD, video conference tanpa hambatan, dan pengalaman online yang lebih kaya.</p>
-          </div>
-
-          <h2 class="mb-3">Fitur Unggulan:</h2>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 30 Mbps:</strong> Kecepatan download dan upload seimbang hingga 30 Mbps, sempurna untuk aktivitas online yang lebih intensif dan penggunaan multi-perangkat.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Layanan Call Center 24/7:</strong> Dukungan pelanggan kami selalu siap sedia membantu Anda mengatasi berbagai kendala teknis.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Free Netflix & VIU 6 Bulan:</strong> Manjakan diri Anda dengan akses gratis ke Netflix dan VIU selama 6 bulan, nikmati ribuan film, serial TV, dan konten eksklusif.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Internet Stabil untuk Produktivitas:</strong> Koneksi yang handal untuk mendukung pekerjaan Anda dari rumah, belajar online, atau menjalankan bisnis kecil.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Tanpa Batas Kuota (FUP Berlaku Wajar):</strong> Gunakan internet sepuasnya tanpa khawatir kehabisan kuota utama.</li>
-          </ul>
-
-          <h2 class="mb-3">Paket Ini Cocok Untuk:</h2>
-          <ul>
-            <li>Keluarga dengan beberapa pengguna internet aktif secara bersamaan.</li>
-            <li>Profesional yang bekerja dari rumah (WFH) dan membutuhkan koneksi stabil untuk meeting online.</li>
-            <li>Streaming film dan serial TV berkualitas HD atau Full HD.</li>
-            <li>Gaming online dengan kebutuhan latensi sedang.</li>
-            <li>Penggunaan 3-5 perangkat secara simultan.</li>
-          </ul>
-
-          <div class="alert alert-info my-4" role="alert">
-            <i class="bi bi-info-circle-fill me-2"></i><strong>Tips:</strong> Untuk pengalaman streaming terbaik, pastikan perangkat Anda mendukung resolusi yang diinginkan dan terhubung dengan sinyal WiFi yang kuat.
-          </div>
-
-          <h2 class="mb-3">Syarat dan Ketentuan:</h2>
-          <ol class="mb-4">
-            <li>Periode kontrak minimal 12 bulan.</li>
-            <li>Biaya perangkat (modem/router) mungkin berlaku atau disewakan.</li>
-            <li>Penawaran Free Netflix & VIU berlaku untuk pelanggan baru dan tunduk pada syarat & ketentuan masing-masing platform.</li>
-            <li>Detail lengkap Syarat dan Ketentuan dapat dilihat <a href="syarat-ketentuan.html#paket-standard" target="_blank">di sini</a>.</li>
-          </ol>
-
-          <h2 class="mb-3">FAQ - Paket Standard</h2>
-          <div class="accordion mb-5" id="faqPaketStandard">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOneStd">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneStd" aria-expanded="false" aria-controls="collapseOneStd">
-                  Apakah kecepatan 30 Mbps cukup untuk streaming 4K?
-                </button>
-              </h2>
-              <div id="collapseOneStd" class="accordion-collapse collapse" aria-labelledby="headingOneStd" data-bs-parent="#faqPaketStandard">
-                <div class="accordion-body">
-                  Kecepatan 30 Mbps umumnya cukup untuk streaming video berkualitas 4K pada satu perangkat. Namun, jika beberapa perangkat streaming 4K secara bersamaan atau ada aktivitas download/upload berat lainnya, Anda mungkin memerlukan kecepatan yang lebih tinggi untuk pengalaman optimal.
-                </div>
+            <h2 class="mb-3 fw-semibold h4 text-center">FAQ - Paket Standard</h2>
+            <div class="accordion accordion-flush shadow-sm border rounded" id="faqPaketStandard">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOneStd"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneStd">Apakah 30 Mbps cukup untuk streaming 4K?</button></h2>
+                <div id="collapseOneStd" class="accordion-collapse collapse" data-bs-parent="#faqPaketStandard"><div class="accordion-body">30 Mbps umumnya cukup untuk streaming 4K satu perangkat. Untuk multi-perangkat 4K, pertimbangkan kecepatan lebih tinggi.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwoStd"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoStd">Cara aktivasi Netflix & VIU gratis?</button></h2>
+                <div id="collapseTwoStd" class="accordion-collapse collapse" data-bs-parent="#faqPaketStandard"><div class="accordion-body">Instruksi detail akan dikirim via email/SMS setelah aktivasi layanan, biasanya menggunakan kode voucher.</div></div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwoStd">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoStd" aria-expanded="false" aria-controls="collapseTwoStd">
-                  Bagaimana cara mengaktifkan langganan gratis Netflix & VIU?
-                </button>
-              </h2>
-              <div id="collapseTwoStd" class="accordion-collapse collapse" aria-labelledby="headingTwoStd" data-bs-parent="#faqPaketStandard">
-                <div class="accordion-body">
-                  Setelah layanan Anda aktif, Anda akan menerima instruksi detail melalui email atau SMS dari tim kami mengenai cara klaim dan aktivasi langganan gratis Netflix dan VIU Anda. Biasanya melibatkan penggunaan kode voucher unik.
-                </div>
-              </div>
-            </div>
-            <!-- Tambahkan FAQ lainnya -->
           </div>
 
-          <div class="text-center">
-            <h3 class="mb-3">Upgrade ke Paket Standard Sekarang!</h3>
-            <a href="index.html#kontak?subjek=Permintaan Paket Standard" class="btn btn-primary btn-lg me-2 mb-2"><i class="bi bi-telephone-fill me-2"></i>Hubungi Sales Kami</a>
-            <button type="button" class="btn btn-success btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#modalCekJangkauan">
-              <i class="bi bi-geo-alt-fill me-2"></i>Cek Jangkauan Area
+          <div class="text-center p-4 p-md-5">
+            <h3 class="mb-3 fw-semibold">Upgrade ke Pengalaman Internet Premium!</h3>
+            <p class="mb-4">Pilih Paket Standard untuk kecepatan dan kenyamanan maksimal. Hubungi kami sekarang!</p>
+            <a href="index.html#kontak?subjek=Permintaan Paket Standard" class="btn btn-primary btn-lg me-lg-2 mb-2 mb-lg-0 shadow-sm"><i class="bi bi-telephone-outbound-fill me-2"></i>Hubungi Sales</a>
+            <button type="button" class="btn btn-success btn-lg mb-2 mb-lg-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalCekJangkauan">
+              <i class="bi bi-map-fill me-2"></i>Cek Jangkauan
             </button>
           </div>
         </div>
@@ -142,27 +136,17 @@
   <div class="modal fade" id="modalCekJangkauan" tabindex="-1" aria-labelledby="modalCekJangkauanLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCekJangkauanLabel">Cek Ketersediaan Layanan</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+        <div class="modal-header"><h5 class="modal-title" id="modalCekJangkauanLabel">Cek Ketersediaan Layanan</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
         <div class="modal-body">
           <p>Silakan masukkan alamat lengkap Anda untuk mengecek apakah layanan FAST ONE sudah tersedia di area Anda.</p>
-          <form>
-            <div class="mb-3">
-              <label for="alamatLengkap" class="form-label">Alamat Lengkap</label>
-              <textarea class="form-control" id="alamatLengkap" rows="3" placeholder="Contoh: Jl. Merdeka No. 10, Kel. Suka Maju, Kec. Bahagia, Kota Senang"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Cek Sekarang</button>
-          </form>
+          <form><div class="mb-3"><label for="alamatLengkapStd" class="form-label">Alamat Lengkap</label><textarea class="form-control" id="alamatLengkapStd" rows="3" placeholder="Contoh: Jl. Merdeka No. 10, Kel. Suka Maju, Kec. Bahagia, Kota Senang"></textarea></div><button type="submit" class="btn btn-primary w-100">Cek Sekarang</button></form>
           <p class="mt-3 text-center text-muted"><small>Atau hubungi tim kami untuk bantuan pengecekan.</small></p>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-  </footer>
+  <footer class="bg-dark text-white text-center py-3 mt-auto"></footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../script.js"></script>

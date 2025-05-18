@@ -21,29 +21,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a>
-          </li>
-          <li class="nav-item ms-lg-2">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode">
-              <i class="bi bi-moon-fill"></i>
-            </button>
-         </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-fill"></i></button></li>
         </ul>
       </div>
     </div>
@@ -52,86 +36,96 @@
   <main class="container mt-5 pt-5">
     <section id="detail-paket" class="py-5">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-9 mx-auto"> <!-- Sedikit lebih lebar -->
 
           <div class="mb-4">
-            <a href="javascript:history.back()" class="btn btn-outline-secondary rounded-pill">
+            <a href="javascript:history.back()" class="btn btn-sm btn-outline-secondary rounded-pill"> <!-- btn-sm -->
               <i class="bi bi-arrow-left me-1"></i>Kembali
             </a>
           </div>
 
+          <!-- Judul dan Harga Dipisah Lebih Jelas -->
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-2">Paket Premium <span class="text-warning">(SUPER Punch)</span></h1> <!-- Ditambah warna untuk SUPER Punch -->
+            <p class="display-6 text-primary fw-light mb-0">Rp 850.000 <small class="text-muted fs-5">/bulan</small></p>
+          </div>
 
-          <h1 class="display-5 fw-bold mb-4">Paket Premium (SUPER Punch)</h1>
-          <p class="lead text-muted mb-4">Rp 850.000 <small class="fw-light">/bulan</small></p>
+          <!-- Hero Block untuk Gambar dan Deskripsi Awal -->
+          <div class="row mb-5 p-4 p-md-5 bg-light rounded shadow-sm align-items-center">
+            <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <img src="../images/paket-premium-hero.jpg" alt="Paket Internet Premium FAST ONE" class="img-fluid rounded shadow-lg"> <!-- GANTI GAMBAR -->
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h3 class="fw-semibold mb-3">Konektivitas Tertinggi untuk Performa Ultimate</h3>
+                <p class="lead">Paket Premium adalah solusi konektivitas internet tertinggi untuk bisnis dan pengguna profesional yang menuntut performa tanpa kompromi, keandalan maksimal, dan layanan eksklusif. Dapatkan pengalaman internet terbaik dengan fitur-fitur paling canggih dari FAST ONE.</p>
+            </div>
+          </div>
+
+          <!-- Setiap Bagian sebagai "Kartu" -->
+          <div class="mb-5 p-4 border rounded shadow-sm">
+            <h2 class="mb-3 fw-semibold h4">Fitur Eksklusif Paket Premium:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-stars text-warning me-2"></i><strong>Semua Fitur Paket Bisnis:</strong> Termasuk Teknisi On-Home 24/7, Cloud 50GB, dll.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-speedometer text-success me-2"></i><strong>Simetris Up To 300 Mbps:</strong> Beban kerja terberat, multi-streaming 8K.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-hdd-network-fill text-success me-2"></i><strong>Dedicated Line (Jalur Khusus):</strong> Stabilitas & kecepatan maksimal konsisten.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-person-hearts text-success me-2"></i><strong>Premium Care Fast-One:</strong> Layanan pelanggan VIP & Account Manager.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-server text-success me-2"></i><strong>On-demand 3 Server Fast-One:</strong> VPN/Proxy/Custom server.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-patch-check-fill text-success me-2"></i><strong>SLA (Service Level Agreement) Ditingkatkan:</strong> Jaminan layanan lebih tinggi.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-binoculars-fill text-success me-2"></i><strong>Monitoring Jaringan Proaktif:</strong> Deteksi & atasi masalah dini.</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Paket Ini Sempurna Untuk:</h2>
+                <ul class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-buildings-fill text-info me-2"></i>Perusahaan menengah hingga besar.</li>
+                  <li class="mb-2"><i class="bi bi-shield-lock-fill text-info me-2"></i>Bisnis dengan ketergantungan tinggi pada internet.</li>
+                  <li class="mb-2"><i class="bi bi-lock-fill text-info me-2"></i>Organisasi butuh jalur dedicated & keamanan.</li>
+                  <li class="mb-2"><i class="bi bi-person-badge-fill text-info me-2"></i>Pengguna inginkan layanan pelanggan premium.</li>
+                  <li class="mb-2"><i class="bi bi-database-fill-gear text-info me-2"></i>Kebutuhan hosting server & aplikasi mission-critical.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Syarat dan Ketentuan:</h2>
+                <ol class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-calendar3-week-fill text-muted me-2"></i>Periode kontrak minimal 24 bulan.</li>
+                  <li class="mb-2"><i class="bi bi-sliders text-muted me-2"></i>Konfigurasi On-demand Server tunduk diskusi.</li>
+                  <li class="mb-2"><i class="bi bi-file-earmark-check-fill text-muted me-2"></i><a href="syarat-ketentuan.html#paket-premium" target="_blank" class="text-decoration-none">Detail SLA Premium & S&K</a>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-warning my-5 shadow-sm d-flex align-items-center" role="alert"> <!-- Diubah menjadi alert-warning -->
+            <i class="bi bi-shield-check-fill fs-4 me-3"></i>
+            <div>
+              <strong>Keandalan Tertinggi untuk Kebutuhan Kritis:</strong> Dengan Dedicated Line, Premium Care, dan Monitoring Proaktif, Paket Premium memberikan jaminan konektivitas dan layanan terbaik untuk operasional yang tidak boleh terganggu.
+            </div>
+          </div>
 
           <div class="mb-5">
-            <img src="../images/paket-premium-hero.jpg" alt="Paket Internet Premium FAST ONE" class="img-fluid rounded shadow mb-3"> <!-- GANTI GAMBAR -->
-            <p>Paket Premium adalah solusi konektivitas internet tertinggi untuk bisnis dan pengguna profesional yang menuntut performa tanpa kompromi, keandalan maksimal, dan layanan eksklusif. Dapatkan pengalaman internet terbaik dengan fitur-fitur paling canggih dari FAST ONE.</p>
-          </div>
-
-          <h2 class="mb-3">Fitur Eksklusif Paket Premium:</h2>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item"><i class="bi bi-stars text-warning me-2"></i><strong>Semua Fitur Paket Bisnis:</strong> Termasuk Teknisi On-Home 24/7, Akses Cloud 50GB (2 Tahun), dan opsi Add-on Switch/Mikrotik Controller.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 300 Mbps:</strong> Kecepatan sangat tinggi hingga 300 Mbps untuk download dan upload, menangani beban kerja terberat sekalipun, multi-streaming 8K, dan operasional data center skala kecil.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Dedicated Line (Jalur Khusus):</strong> Koneksi internet Anda akan menggunakan jalur khusus (dedicated) yang tidak dibagi dengan pengguna lain, menjamin stabilitas dan kecepatan maksimal secara konsisten.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Premium Care Fast-One:</strong> Layanan pelanggan VIP dengan Account Manager khusus yang siap membantu segala kebutuhan Anda, mulai dari teknis hingga administrasi.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>On-demand 3 Server Fast-One (VPN/Proxy/Custom):</strong> Akses ke 3 server FAST ONE yang dapat dikonfigurasi sesuai kebutuhan Anda (misalnya untuk VPN internal, proxy, atau kebutuhan server spesifik lainnya).</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>SLA (Service Level Agreement) yang Ditingkatkan:</strong> Jaminan tingkat layanan yang lebih tinggi untuk ketersediaan, waktu respons, dan penyelesaian masalah.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Monitoring Jaringan Proaktif:</strong> Tim kami akan memantau koneksi Anda secara proaktif untuk mendeteksi dan mengatasi potensi masalah sebelum berdampak pada layanan Anda.</li>
-          </ul>
-
-          <h2 class="mb-3">Paket Ini Sempurna Untuk:</h2>
-          <ul>
-            <li>Perusahaan menengah hingga besar dengan kebutuhan internet sangat tinggi.</li>
-            <li>Bisnis yang sangat bergantung pada ketersediaan internet (e-commerce, layanan keuangan, media).</li>
-            <li>Organisasi yang memerlukan jalur koneksi dedicated dan keamanan tinggi.</li>
-            <li>Pengguna yang menginginkan layanan pelanggan paling premium dan personal.</li>
-            <li>Kebutuhan hosting server internal atau aplikasi mission-critical.</li>
-          </ul>
-
-          <div class="alert alert-primary my-4" role="alert">
-            <i class="bi bi-shield-check-fill me-2"></i><strong>Keandalan Tertinggi:</strong> Dengan Dedicated Line dan Premium Care, Paket Premium memberikan jaminan konektivitas dan layanan terbaik.
-          </div>
-
-          <h2 class="mb-3">Syarat dan Ketentuan:</h2>
-          <ol class="mb-4">
-            <li>Periode kontrak minimal 24 bulan.</li>
-            <li>Konfigurasi On-demand Server tunduk pada diskusi teknis dan ketersediaan sumber daya.</li>
-            <li>Detail lengkap SLA Premium dan Syarat dan Ketentuan dapat dilihat <a href="syarat-ketentuan.html#paket-premium" target="_blank">di sini</a> atau didiskusikan dengan Account Manager Anda.</li>
-          </ol>
-
-          <h2 class="mb-3">FAQ - Paket Premium</h2>
-          <div class="accordion mb-5" id="faqPaketPremium">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOnePremium">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePremium" aria-expanded="false" aria-controls="collapseOnePremium">
-                  Apa perbedaan signifikan antara Dedicated Line dan jalur biasa?
-                </button>
-              </h2>
-              <div id="collapseOnePremium" class="accordion-collapse collapse" aria-labelledby="headingOnePremium" data-bs-parent="#faqPaketPremium">
-                <div class="accordion-body">
-                  Dedicated Line berarti Anda mendapatkan alokasi bandwidth yang sepenuhnya milik Anda, tidak dibagi dengan pengguna lain di area tersebut. Ini menghasilkan kecepatan yang lebih konsisten, latensi lebih rendah, dan keandalan yang jauh lebih tinggi, terutama pada jam sibuk. Jalur biasa (shared) berbagi kapasitas dengan pengguna lain, sehingga performa bisa berfluktuasi.
-                </div>
+            <h2 class="mb-3 fw-semibold h4 text-center">FAQ - Paket Premium</h2>
+            <div class="accordion accordion-flush shadow-sm border rounded" id="faqPaketPremium">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOnePremium"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePremium">Perbedaan signifikan Dedicated Line & jalur biasa?</button></h2>
+                <div id="collapseOnePremium" class="accordion-collapse collapse" data-bs-parent="#faqPaketPremium"><div class="accordion-body">Dedicated Line berarti alokasi bandwidth sepenuhnya milik Anda, tidak dibagi. Ini menghasilkan kecepatan konsisten, latensi rendah, & keandalan tinggi, terutama di jam sibuk.</div></div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwoPremium">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPremium" aria-expanded="false" aria-controls="collapseTwoPremium">
-                  Bagaimana cara kerja Account Manager di Premium Care?
-                </button>
-              </h2>
-              <div id="collapseTwoPremium" class="accordion-collapse collapse" aria-labelledby="headingTwoPremium" data-bs-parent="#faqPaketPremium">
-                <div class="accordion-body">
-                  Sebagai pelanggan Premium, Anda akan memiliki satu Account Manager khusus yang menjadi titik kontak utama Anda di FAST ONE. Mereka akan memahami kebutuhan bisnis Anda, membantu koordinasi teknis, menangani permintaan layanan, dan memastikan Anda mendapatkan pengalaman terbaik dengan layanan kami.
-                </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwoPremium"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPremium">Cara kerja Account Manager di Premium Care?</button></h2>
+                <div id="collapseTwoPremium" class="accordion-collapse collapse" data-bs-parent="#faqPaketPremium"><div class="accordion-body">Anda memiliki satu Account Manager khusus sebagai titik kontak utama. Mereka memahami kebutuhan Anda, membantu koordinasi teknis, menangani permintaan, & memastikan pengalaman terbaik.</div></div>
               </div>
             </div>
           </div>
 
-          <div class="text-center">
-            <h3 class="mb-3">Rasakan Keunggulan Internet Premium!</h3>
-            <a href="index.html#kontak?subjek=Permintaan Paket Premium" class="btn btn-primary btn-lg me-2 mb-2"><i class="bi bi-gem me-2"></i>Hubungi Account Manager</a>
-            <button type="button" class="btn btn-success btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#modalKonsultasiPremium">
+          <div class="text-center p-4 p-md-5">
+            <h3 class="mb-3 fw-semibold">Rasakan Keunggulan Internet Tanpa Batas dengan Paket Premium!</h3>
+            <p class="mb-4">Hubungi Account Manager kami untuk mendapatkan penawaran eksklusif yang disesuaikan dengan kebutuhan Anda.</p>
+            <a href="index.html#kontak?subjek=Permintaan Paket Premium" class="btn btn-warning btn-lg me-lg-2 mb-2 mb-lg-0 shadow-sm text-dark"><i class="bi bi-gem me-2"></i>Hubungi Account Manager</a> <!-- Tombol dibuat warna warning -->
+            <button type="button" class="btn btn-primary btn-lg mb-2 mb-lg-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalKonsultasiPremium">
               <i class="bi bi-person-check-fill me-2"></i>Minta Penawaran Khusus
             </button>
           </div>
@@ -141,7 +135,7 @@
   </main>
 
   <div class="modal fade" id="modalKonsultasiPremium" tabindex="-1" aria-labelledby="modalKonsultasiPremiumLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Modal lebih besar -->
+    <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- Modal dibuat lebih besar (modal-xl) -->
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalKonsultasiPremiumLabel">Permintaan Penawaran Paket Premium</h5>
@@ -152,21 +146,21 @@
           <form>
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="namaPerusahaanPremium" class="form-label">Nama Perusahaan</label>
+                    <label for="namaPerusahaanPremium" class="form-label">Nama Perusahaan <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="namaPerusahaanPremium" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="namaKontakPremium" class="form-label">Nama PIC (Person in Charge)</label>
+                    <label for="namaKontakPremium" class="form-label">Nama PIC (Person in Charge) <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="namaKontakPremium" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="emailPremium" class="form-label">Alamat Email</label>
+                    <label for="emailPremium" class="form-label">Alamat Email <span class="text-danger">*</span></label>
                     <input type="email" class="form-control" id="emailPremium" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="teleponPremium" class="form-label">Nomor Telepon</label>
+                    <label for="teleponPremium" class="form-label">Nomor Telepon <span class="text-danger">*</span></label>
                     <input type="tel" class="form-control" id="teleponPremium" required>
                 </div>
             </div>
@@ -178,15 +172,14 @@
               <label for="kebutuhanSpesifikPremium" class="form-label">Kebutuhan Spesifik / Pertanyaan</label>
               <textarea class="form-control" id="kebutuhanSpesifikPremium" rows="3" placeholder="Contoh: Jumlah pengguna, jenis industri, kebutuhan server, SLA yang diharapkan, dll."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Kirim Permintaan</button>
+            <button type="submit" class="btn btn-primary w-100">Kirim Permintaan Penawaran</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-  </footer>
+  <footer class="bg-dark text-white text-center py-3 mt-auto"></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../script.js"></script>

@@ -21,29 +21,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a>
-          </li>
-          <li class="nav-item ms-lg-2">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode">
-              <i class="bi bi-moon-fill"></i>
-            </button>
-         </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-fill"></i></button></li>
         </ul>
       </div>
     </div>
@@ -52,83 +36,95 @@
   <main class="container mt-5 pt-5">
     <section id="detail-paket" class="py-5">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-9 mx-auto"> <!-- Sedikit lebih lebar -->
 
           <div class="mb-4">
-            <a href="javascript:history.back()" class="btn btn-outline-secondary rounded-pill">
+            <a href="javascript:history.back()" class="btn btn-sm btn-outline-secondary rounded-pill"> <!-- btn-sm -->
               <i class="bi bi-arrow-left me-1"></i>Kembali
             </a>
-          </div>  
+          </div>
 
-          <h1 class="display-5 fw-bold mb-4">Paket Hemat (Ratio Punch)</h1>
-          <p class="lead text-muted mb-4">Rp 150.000 <small class="fw-light">/bulan</small></p>
+          <!-- Judul dan Harga Dipisah Lebih Jelas -->
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-2">Paket Hemat <span class="text-success">(Ratio Punch)</span></h1> <!-- Ditambah warna untuk Ratio Punch -->
+            <p class="display-6 text-primary fw-light mb-0">Rp 150.000 <small class="text-muted fs-5">/bulan</small></p>
+          </div>
+
+          <!-- Hero Block untuk Gambar dan Deskripsi Awal -->
+          <div class="row mb-5 p-4 p-md-5 bg-light rounded shadow-sm align-items-center">
+            <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <img src="../images/paket-basic-hero.jpg" alt="Paket Internet Hemat FAST ONE" class="img-fluid rounded shadow-lg"> <!-- GANTI GAMBAR, idealnya gambar khusus paket hemat -->
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h3 class="fw-semibold mb-3">Solusi Internet Terjangkau untuk Kebutuhan Dasar</h3>
+                <p class="lead">Paket Hemat adalah solusi internet terjangkau untuk kebutuhan dasar Anda. Ideal bagi pengguna dengan budget terbatas yang memerlukan koneksi stabil untuk browsing, media sosial, dan komunikasi sehari-hari. Dilengkapi dengan FUP (Fair Usage Policy) untuk menjaga kualitas layanan.</p>
+            </div>
+          </div>
+
+          <!-- Setiap Bagian sebagai "Kartu" -->
+          <div class="mb-5 p-4 border rounded shadow-sm">
+            <h2 class="mb-3 fw-semibold h4">Fitur Unggulan Paket Hemat:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 20 Mbps (FUP 400 GB):</strong> Kecepatan & kuota wajar.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Free Biaya Registrasi:</strong> Hemat biaya pendaftaran.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Koneksi Stabil untuk Kebutuhan Dasar:</strong> Browsing, sosmed, chat.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Layanan Call Center 24/7:</strong> Dukungan pelanggan tetap tersedia.</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Paket Ini Cocok Untuk:</h2>
+                <ul class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-mortarboard-fill text-info me-2"></i>Pelajar atau mahasiswa budget terbatas.</li>
+                  <li class="mb-2"><i class="bi bi-mouse2-fill text-info me-2"></i>Pengguna internet ringan.</li>
+                  <li class="mb-2"><i class="bi bi-person-fill text-info me-2"></i>Satu atau dua pengguna di rumah.</li>
+                  <li class="mb-2"><i class="bi bi-graph-up text-info me-2"></i>Pengguna sadar penggunaan data.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Syarat dan Ketentuan:</h2>
+                <ol class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-calendar-check-fill text-muted me-2"></i>Periode kontrak minimal 12 bulan.</li>
+                  <li class="mb-2"><i class="bi bi-router-fill text-muted me-2"></i>Biaya perangkat mungkin berlaku.</li>
+                  <li class="mb-2"><i class="bi bi-file-earmark-ruled-fill text-muted me-2"></i><a href="syarat-ketentuan.html#fup" target="_blank" class="text-decoration-none">Detail kebijakan FUP berlaku</a>.</li>
+                  <li class="mb-2"><i class="bi bi-link-45deg text-muted me-2"></i><a href="syarat-ketentuan.html#paket-hemat" target="_blank" class="text-decoration-none">Detail S&K lengkap</a>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-warning my-5 shadow-sm d-flex align-items-center" role="alert">
+            <i class="bi bi-exclamation-triangle-fill fs-4 me-3"></i>
+            <div>
+              <strong>Perhatian FUP (Fair Usage Policy):</strong> Paket ini memiliki batas penggunaan wajar 400 GB/bulan. Setelah melewati batas, kecepatan akan diturunkan hingga siklus tagihan berikutnya untuk menjaga kualitas jaringan.
+            </div>
+          </div>
 
           <div class="mb-5">
-            <img src="../images/paket-hemat-hero.jpg" alt="Paket Internet Hemat FAST ONE" class="img-fluid rounded shadow mb-3"> <!-- GANTI GAMBAR -->
-            <p>Paket Hemat adalah solusi internet terjangkau untuk kebutuhan dasar Anda. Ideal bagi pengguna dengan budget terbatas yang memerlukan koneksi stabil untuk browsing, media sosial, dan komunikasi sehari-hari. Dilengkapi dengan FUP (Fair Usage Policy) untuk menjaga kualitas layanan.</p>
-          </div>
-
-          <h2 class="mb-3">Fitur Unggulan:</h2>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 20 Mbps (FUP 400 GB):</strong> Nikmati kecepatan hingga 20 Mbps untuk download dan upload. Setelah penggunaan mencapai 400 GB dalam sebulan, kecepatan akan disesuaikan.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Free Biaya Registrasi:</strong> Hemat lebih banyak dengan gratis biaya pendaftaran awal.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Koneksi Stabil untuk Kebutuhan Dasar:</strong> Cukup untuk browsing, email, chatting, media sosial, dan streaming musik.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Layanan Call Center 24/7:</strong> Tetap dapatkan dukungan pelanggan yang siap membantu Anda.</li>
-          </ul>
-
-          <h2 class="mb-3">Paket Ini Cocok Untuk:</h2>
-          <ul>
-            <li>Pelajar atau mahasiswa dengan budget terbatas.</li>
-            <li>Pengguna internet ringan (browsing, sosial media, email).</li>
-            <li>Satu atau dua pengguna dalam satu rumah.</li>
-            <li>Mereka yang sadar akan penggunaan datanya dan tidak memerlukan kuota besar tanpa batas.</li>
-          </ul>
-
-          <div class="alert alert-warning my-4" role="alert">
-            <i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Perhatian FUP:</strong> Paket ini memiliki batas penggunaan wajar (FUP) sebesar 400 GB per bulan. Setelah melewati batas ini, kecepatan internet akan diturunkan (misalnya menjadi 1-3 Mbps) hingga periode tagihan berikutnya. Ini dilakukan untuk menjaga kualitas jaringan bagi semua pengguna.
-          </div>
-
-          <h2 class="mb-3">Syarat dan Ketentuan:</h2>
-          <ol class="mb-4">
-            <li>Periode kontrak minimal 12 bulan.</li>
-            <li>Biaya perangkat (modem/router) mungkin berlaku atau disewakan.</li>
-            <li>Detail mengenai penyesuaian kecepatan setelah FUP tercapai dapat dilihat pada <a href="syarat-ketentuan.html#fup" target="_blank">kebijakan FUP kami</a>.</li>
-            <li>Detail lengkap Syarat dan Ketentuan dapat dilihat <a href="syarat-ketentuan.html#paket-hemat" target="_blank">di sini</a>.</li>
-          </ol>
-
-          <h2 class="mb-3">FAQ - Paket Hemat</h2>
-          <div class="accordion mb-5" id="faqPaketHemat">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOneHemat">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneHemat" aria-expanded="false" aria-controls="collapseOneHemat">
-                  Apa yang terjadi jika saya melebihi FUP 400 GB?
-                </button>
-              </h2>
-              <div id="collapseOneHemat" class="accordion-collapse collapse" aria-labelledby="headingOneHemat" data-bs-parent="#faqPaketHemat">
-                <div class="accordion-body">
-                  Jika penggunaan data Anda melebihi 400 GB dalam satu siklus tagihan, kecepatan internet Anda akan diturunkan (misalnya ke 1 Mbps atau 3 Mbps, tergantung kebijakan) hingga awal siklus tagihan berikutnya. Anda tetap bisa terhubung ke internet, namun dengan kecepatan yang lebih lambat.
-                </div>
+            <h2 class="mb-3 fw-semibold h4 text-center">FAQ - Paket Hemat</h2>
+            <div class="accordion accordion-flush shadow-sm border rounded" id="faqPaketHemat">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOneHemat"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneHemat">Apa yang terjadi jika melebihi FUP 400 GB?</button></h2>
+                <div id="collapseOneHemat" class="accordion-collapse collapse" data-bs-parent="#faqPaketHemat"><div class="accordion-body">Kecepatan internet Anda akan diturunkan (misal ke 1-3 Mbps) hingga awal siklus tagihan berikutnya. Anda tetap bisa terhubung, namun lebih lambat.</div></div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwoHemat">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoHemat" aria-expanded="false" aria-controls="collapseTwoHemat">
-                  Apakah saya bisa menambah kuota jika FUP sudah tercapai?
-                </button>
-              </h2>
-              <div id="collapseTwoHemat" class="accordion-collapse collapse" aria-labelledby="headingTwoHemat" data-bs-parent="#faqPaketHemat">
-                <div class="accordion-body">
-                  Saat ini, Paket Hemat tidak menyediakan opsi add-on kuota setelah FUP tercapai. Kecepatan akan kembali normal pada awal siklus tagihan berikutnya. Jika Anda sering melebihi FUP, kami sarankan untuk mempertimbangkan upgrade ke paket dengan FUP lebih besar atau tanpa FUP seperti Paket Basic atau Standard.
-                </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwoHemat"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoHemat">Bisa tambah kuota jika FUP tercapai?</button></h2>
+                <div id="collapseTwoHemat" class="accordion-collapse collapse" data-bs-parent="#faqPaketHemat"><div class="accordion-body">Saat ini, Paket Hemat tidak ada opsi add-on kuota. Kecepatan normal kembali di awal siklus tagihan. Pertimbangkan upgrade jika sering melebihi FUP.</div></div>
               </div>
             </div>
           </div>
 
-          <div class="text-center">
-            <h3 class="mb-3">Dapatkan Koneksi Terjangkau dengan Paket Hemat!</h3>
-            <a href="index.html#kontak?subjek=Permintaan Paket Hemat" class="btn btn-primary btn-lg me-2 mb-2"><i class="bi bi-telephone-fill me-2"></i>Hubungi Sales Kami</a>
-            <button type="button" class="btn btn-success btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#modalCekJangkauan">
-              <i class="bi bi-geo-alt-fill me-2"></i>Cek Jangkauan Area
+          <!-- Menggunakan bg-body-tertiary untuk CTA -->
+          <div class="text-center p-4 p-md-5">
+            <h3 class="mb-3 fw-semibold">Dapatkan Koneksi Internet Terjangkau Sekarang!</h3>
+            <p class="mb-4">Pilih Paket Hemat FAST ONE untuk kebutuhan internet dasar Anda dengan harga terbaik.</p>
+            <a href="index.html#kontak?subjek=Permintaan Paket Hemat" class="btn btn-primary btn-lg me-lg-2 mb-2 mb-lg-0 shadow-sm"><i class="bi bi-telephone-outbound-fill me-2"></i>Hubungi Sales Kami</a>
+            <button type="button" class="btn btn-success btn-lg mb-2 mb-lg-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalCekJangkauan">
+              <i class="bi bi-map-fill me-2"></i>Cek Jangkauan Area
             </button>
           </div>
         </div>
@@ -139,27 +135,17 @@
   <div class="modal fade" id="modalCekJangkauan" tabindex="-1" aria-labelledby="modalCekJangkauanLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCekJangkauanLabel">Cek Ketersediaan Layanan</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+        <div class="modal-header"><h5 class="modal-title" id="modalCekJangkauanLabel">Cek Ketersediaan Layanan</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
         <div class="modal-body">
           <p>Silakan masukkan alamat lengkap Anda untuk mengecek apakah layanan FAST ONE sudah tersedia di area Anda.</p>
-          <form>
-            <div class="mb-3">
-              <label for="alamatLengkap" class="form-label">Alamat Lengkap</label>
-              <textarea class="form-control" id="alamatLengkap" rows="3" placeholder="Contoh: Jl. Merdeka No. 10, Kel. Suka Maju, Kec. Bahagia, Kota Senang"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Cek Sekarang</button>
-          </form>
+          <form><div class="mb-3"><label for="alamatLengkapHemat" class="form-label">Alamat Lengkap</label><textarea class="form-control" id="alamatLengkapHemat" rows="3" placeholder="Contoh: Jl. Merdeka No. 10, Kel. Suka Maju, Kec. Bahagia, Kota Senang"></textarea></div><button type="submit" class="btn btn-primary w-100">Cek Sekarang</button></form>
           <p class="mt-3 text-center text-muted"><small>Atau hubungi tim kami untuk bantuan pengecekan.</small></p>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-  </footer>
+  <footer class="bg-dark text-white text-center py-3 mt-auto"></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../script.js"></script>

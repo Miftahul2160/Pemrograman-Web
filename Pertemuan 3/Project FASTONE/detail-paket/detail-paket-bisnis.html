@@ -21,29 +21,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a>
-          </li>
-          <li class="nav-item ms-lg-2">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode">
-              <i class="bi bi-moon-fill"></i>
-            </button>
-         </li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#beranda"><i class="bi bi-house-door-fill me-1"></i>Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#tentang-kita"><i class="bi bi-info-circle-fill me-1"></i>Tentang Kita</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#layanan"><i class="bi bi-gear-fill me-1"></i>Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#paket-core"><i class="bi bi-tags-fill me-1"></i>Pricelist</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#kontak"><i class="bi bi-envelope-fill me-1"></i>Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#lokasi"><i class="bi bi-geo-alt-fill me-1"></i>Lokasi</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-link nav-link py-2 px-0 px-lg-2" type="button" id="darkModeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-fill"></i></button></li>
         </ul>
       </div>
     </div>
@@ -52,86 +36,97 @@
   <main class="container mt-5 pt-5">
     <section id="detail-paket" class="py-5">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-9 mx-auto"> <!-- Sedikit lebih lebar -->
 
           <div class="mb-4">
-            <a href="javascript:history.back()" class="btn btn-outline-secondary rounded-pill">
+            <a href="javascript:history.back()" class="btn btn-sm btn-outline-secondary rounded-pill"> <!-- btn-sm -->
               <i class="bi bi-arrow-left me-1"></i>Kembali
             </a>
           </div>
 
-          <h1 class="display-5 fw-bold mb-4">Paket Bisnis (Professional Punch)</h1>
-          <p class="lead text-muted mb-4">Rp 600.000 <small class="fw-light">/bulan</small></p>
+          <!-- Judul dan Harga Dipisah Lebih Jelas -->
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-2">Paket Bisnis (Professional Punch)</h1>
+            <p class="display-6 text-primary fw-light mb-0">Rp 600.000 <small class="text-muted fs-5">/bulan</small></p>
+          </div>
+
+          <!-- Hero Block untuk Gambar dan Deskripsi Awal -->
+          <div class="row mb-5 p-4 p-md-5 bg-light rounded shadow-sm align-items-center">
+            <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+                <img src="../images/paket-bisnis-hero.jpg" alt="Paket Internet Bisnis FAST ONE" class="img-fluid rounded shadow-lg"> <!-- GANTI GAMBAR -->
+            </div>
+            <div class="col-md-7 col-lg-8">
+                <h3 class="fw-semibold mb-3">Solusi Konektivitas Unggul untuk Bisnis Anda</h3>
+                <p class="lead">Dirancang khusus untuk mendukung operasional bisnis Anda, Paket Bisnis dari FAST ONE menawarkan konektivitas internet berkecepatan tinggi, handal, dengan dukungan prioritas untuk memastikan kelancaran usaha Anda.</p>
+            </div>
+          </div>
+
+          <!-- Setiap Bagian sebagai "Kartu" -->
+          <div class="mb-5 p-4 border rounded shadow-sm">
+            <h2 class="mb-3 fw-semibold h4">Fitur Unggulan untuk Bisnis Anda:</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 100 Mbps:</strong> Ideal untuk aplikasi bisnis, transfer data besar, cloud.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Teknisi On-Home 24/7:</strong> Dukungan prioritas & kunjungan teknisi.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Akses Cloud 50GB (2 Tahun):</strong> Penyimpanan data bisnis aman.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Add-on Switch/Mikrotik Controller:</strong> Manajemen jaringan canggih.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Alokasi IP Statis (opsional):</strong> Untuk hosting server & VPN.</li>
+              <li class="list-group-item bg-transparent ps-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>SLA (Service Level Agreement) Dasar:</strong> Jaminan tingkat layanan.</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Paket Ini Ideal Untuk:</h2>
+                <ul class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-shop text-info me-2"></i>Usaha Kecil Menengah (UKM).</li>
+                  <li class="mb-2"><i class="bi bi-cloud-fill text-info me-2"></i>Kantor dengan aplikasi cloud aktif.</li>
+                  <li class="mb-2"><i class="bi bi-camera-video-fill text-info me-2"></i>Bisnis dengan video conference intensif.</li>
+                  <li class="mb-2"><i class="bi bi-hdd-network-fill text-info me-2"></i>Penggunaan multi-perangkat bandwidth tinggi.</li>
+                  <li class="mb-2"><i class="bi bi-headset text-info me-2"></i>Bisnis butuh dukungan teknis responsif.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-5 p-4 border rounded shadow-sm h-100">
+                <h2 class="mb-3 fw-semibold h4">Syarat dan Ketentuan:</h2>
+                <ol class="list-unstyled ps-0">
+                  <li class="mb-2"><i class="bi bi-calendar-check-fill text-muted me-2"></i>Kontrak minimal 12/24 bulan.</li>
+                  <li class="mb-2"><i class="bi bi-tools text-muted me-2"></i>Biaya instalasi & perangkat tambahan.</li>
+                  <li class="mb-2"><i class="bi bi-person-gear text-muted me-2"></i>Teknisi On-Home tunduk ketentuan.</li>
+                  <li class="mb-2"><i class="bi bi-file-earmark-text-fill text-muted me-2"></i><a href="syarat-ketentuan.html#paket-bisnis" target="_blank" class="text-decoration-none">Detail SLA & S&K lengkap</a>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-primary my-5 shadow-sm d-flex align-items-center" role="alert"> <!-- Diubah menjadi alert-primary -->
+            <i class="bi bi-building-fill-gear fs-4 me-3"></i>
+            <div>
+              <strong>Optimalkan Bisnis Anda:</strong> Dengan Paket Bisnis, fokus pada pengembangan usaha Anda, biarkan kami yang mengurus konektivitas internet Anda dengan layanan prioritas.
+            </div>
+          </div>
 
           <div class="mb-5">
-            <img src="../images/paket-bisnis-hero.jpg" alt="Paket Internet Bisnis FAST ONE" class="img-fluid rounded shadow mb-3"> <!-- GANTI GAMBAR -->
-            <p>Dirancang khusus untuk mendukung operasional bisnis Anda, Paket Bisnis dari FAST ONE menawarkan konektivitas internet berkecepatan tinggi, handal, dengan dukungan prioritas untuk memastikan kelancaran usaha Anda.</p>
-          </div>
-
-          <h2 class="mb-3">Fitur Unggulan untuk Bisnis Anda:</h2>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Simetris Up To 100 Mbps:</strong> Kecepatan download dan upload setara hingga 100 Mbps, sangat ideal untuk aplikasi bisnis, transfer data besar, video conference multi-partisipan, dan operasional cloud.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Teknisi On-Home 24/7:</strong> Layanan dukungan teknis prioritas dengan kunjungan teknisi ke lokasi Anda kapan pun dibutuhkan, memastikan downtime minimal.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Akses Cloud 50GB (2 Tahun):</strong> Penyimpanan cloud aman sebesar 50GB selama 2 tahun untuk data bisnis penting Anda.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Add-on Switch/Mikrotik Controller:</strong> Opsi penambahan perangkat switch atau Mikrotik controller untuk manajemen jaringan yang lebih canggih dan distribusi koneksi yang optimal di lingkungan kantor.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Alokasi IP Statis (opsional):</strong> Kemudahan untuk hosting server internal, akses VPN, atau aplikasi bisnis lainnya yang memerlukan IP publik statis.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>SLA (Service Level Agreement) Dasar:</strong> Jaminan tingkat layanan dasar untuk ketersediaan koneksi.</li>
-          </ul>
-
-          <h2 class="mb-3">Paket Ini Ideal Untuk:</h2>
-          <ul>
-            <li>Usaha Kecil Menengah (UKM) yang membutuhkan koneksi internet stabil dan cepat.</li>
-            <li>Kantor cabang atau startup dengan tim yang aktif menggunakan aplikasi cloud.</li>
-            <li>Bisnis yang mengandalkan video conference untuk komunikasi internal dan eksternal.</li>
-            <li>Penggunaan multi-perangkat dengan kebutuhan bandwidth tinggi.</li>
-            <li>Bisnis yang memerlukan dukungan teknis responsif.</li>
-          </ul>
-
-          <div class="alert alert-info my-4" role="alert">
-            <i class="bi bi-building-fill-gear me-2"></i><strong>Optimalkan Bisnis Anda:</strong> Dengan Paket Bisnis, fokus pada pengembangan usaha Anda, biarkan kami yang mengurus konektivitas internet Anda.
-          </div>
-
-          <h2 class="mb-3">Syarat dan Ketentuan:</h2>
-          <ol class="mb-4">
-            <li>Periode kontrak minimal 12 atau 24 bulan (opsional).</li>
-            <li>Biaya instalasi dan perangkat tambahan (Switch/Mikrotik) mungkin berlaku.</li>
-            <li>Layanan Teknisi On-Home 24/7 tunduk pada ketentuan area layanan dan jenis gangguan.</li>
-            <li>Detail lengkap SLA dan Syarat dan Ketentuan dapat dilihat <a href="syarat-ketentuan.html#paket-bisnis" target="_blank">di sini</a>.</li>
-          </ol>
-
-          <h2 class="mb-3">FAQ - Paket Bisnis</h2>
-          <div class="accordion mb-5" id="faqPaketBisnis">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOneBisnis">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBisnis" aria-expanded="false" aria-controls="collapseOneBisnis">
-                  Apa keuntungan utama dari Teknisi On-Home 24/7?
-                </button>
-              </h2>
-              <div id="collapseOneBisnis" class="accordion-collapse collapse" aria-labelledby="headingOneBisnis" data-bs-parent="#faqPaketBisnis">
-                <div class="accordion-body">
-                  Keuntungan utamanya adalah respons yang cepat dan penanganan langsung di lokasi Anda jika terjadi gangguan. Ini meminimalkan waktu henti (downtime) operasional bisnis Anda dan memastikan masalah teknis dapat diselesaikan secepat mungkin oleh teknisi ahli.
-                </div>
+            <h2 class="mb-3 fw-semibold h4 text-center">FAQ - Paket Bisnis</h2>
+            <div class="accordion accordion-flush shadow-sm border rounded" id="faqPaketBisnis">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOneBisnis"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBisnis">Keuntungan utama Teknisi On-Home 24/7?</button></h2>
+                <div id="collapseOneBisnis" class="accordion-collapse collapse" data-bs-parent="#faqPaketBisnis"><div class="accordion-body">Respons cepat dan penanganan langsung di lokasi jika ada gangguan, meminimalkan downtime operasional bisnis Anda oleh teknisi ahli.</div></div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwoBisnis">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBisnis" aria-expanded="false" aria-controls="collapseTwoBisnis">
-                  Bagaimana cara meminta IP Statis?
-                </button>
-              </h2>
-              <div id="collapseTwoBisnis" class="accordion-collapse collapse" aria-labelledby="headingTwoBisnis" data-bs-parent="#faqPaketBisnis">
-                <div class="accordion-body">
-                  Anda dapat mengajukan permintaan IP Statis kepada tim sales kami saat pendaftaran atau selama periode berlangganan. Mungkin ada biaya tambahan bulanan untuk layanan IP Statis. Tim kami akan membantu proses konfigurasinya.
-                </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwoBisnis"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBisnis">Bagaimana cara meminta IP Statis?</button></h2>
+                <div id="collapseTwoBisnis" class="accordion-collapse collapse" data-bs-parent="#faqPaketBisnis"><div class="accordion-body">Ajukan ke tim sales saat pendaftaran atau selama berlangganan. Mungkin ada biaya tambahan. Tim kami akan membantu prosesnya.</div></div>
               </div>
             </div>
           </div>
 
-          <div class="text-center">
-            <h3 class="mb-3">Tingkatkan Produktivitas Bisnis Anda!</h3>
-            <a href="index.html#kontak?subjek=Permintaan Paket Bisnis" class="btn btn-primary btn-lg me-2 mb-2"><i class="bi bi-briefcase-fill me-2"></i>Konsultasi dengan Tim Sales</a>
-            <button type="button" class="btn btn-success btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#modalCekJangkauanBisnis">
-              <i class="bi bi-geo-alt-fill me-2"></i>Cek Jangkauan & Kebutuhan
+          <div class="text-center p-4 p-md-5">
+            <h3 class="mb-3 fw-semibold">Tingkatkan Produktivitas dan Efisiensi Bisnis Anda!</h3>
+            <p class="mb-4">Pilih Paket Bisnis FAST ONE untuk koneksi internet handal dengan dukungan profesional.</p>
+            <a href="index.html#kontak?subjek=Permintaan Paket Bisnis" class="btn btn-primary btn-lg me-lg-2 mb-2 mb-lg-0 shadow-sm"><i class="bi bi-briefcase-fill me-2"></i>Konsultasi dengan Tim Sales</a>
+            <button type="button" class="btn btn-success btn-lg mb-2 mb-lg-0 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalCekJangkauanBisnis">
+              <i class="bi bi-map-fill me-2"></i>Cek Jangkauan & Kebutuhan
             </button>
           </div>
         </div>
@@ -140,22 +135,21 @@
   </main>
 
   <div class="modal fade" id="modalCekJangkauanBisnis" tabindex="-1" aria-labelledby="modalCekJangkauanBisnisLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Ditambah modal-lg untuk form yang lebih panjang -->
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCekJangkauanBisnisLabel">Konsultasi Kebutuhan Bisnis</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+        <div class="modal-header"><h5 class="modal-title" id="modalCekJangkauanBisnisLabel">Konsultasi Kebutuhan Bisnis</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
         <div class="modal-body">
           <p>Tim kami siap membantu menganalisis kebutuhan internet spesifik untuk bisnis Anda dan mengecek ketersediaan layanan di lokasi Anda.</p>
           <form>
-            <div class="mb-3">
-                <label for="namaPerusahaan" class="form-label">Nama Perusahaan</label>
-                <input type="text" class="form-control" id="namaPerusahaan" required>
-            </div>
-            <div class="mb-3">
-                <label for="kontakBisnis" class="form-label">Email atau Nomor Telepon Bisnis</label>
-                <input type="text" class="form-control" id="kontakBisnis" required>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="namaPerusahaan" class="form-label">Nama Perusahaan <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="namaPerusahaan" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="kontakBisnis" class="form-label">Email atau Nomor Telepon Bisnis <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="kontakBisnis" required>
+                </div>
             </div>
             <div class="mb-3">
               <label for="alamatLengkapBisnis" class="form-label">Alamat Lengkap Perusahaan</label>
@@ -163,7 +157,7 @@
             </div>
             <div class="mb-3">
               <label for="kebutuhanBisnis" class="form-label">Deskripsi Singkat Kebutuhan</label>
-              <textarea class="form-control" id="kebutuhanBisnis" rows="2" placeholder="Contoh: Jumlah karyawan, jenis aplikasi yang digunakan, dll."></textarea>
+              <textarea class="form-control" id="kebutuhanBisnis" rows="2" placeholder="Contoh: Jumlah karyawan, jenis aplikasi yang digunakan, kebutuhan IP Statis, dll."></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Kirim Permintaan Konsultasi</button>
           </form>
@@ -172,8 +166,7 @@
     </div>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-  </footer>
+  <footer class="bg-dark text-white text-center py-3 mt-auto"></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../script.js"></script>
