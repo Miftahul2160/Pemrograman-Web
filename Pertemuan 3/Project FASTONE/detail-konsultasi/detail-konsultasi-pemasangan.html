@@ -6,7 +6,16 @@
   <title>Detail Konsultasi Pemasangan Wifi - FAST ONE</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css"> <!-- Pastikan path ini benar -->
+  <style>
+    /* Tambahan style jika diperlukan, misal untuk list-styled jika tidak ingin menggunakan list-group */
+    .list-styled {
+      padding-left: 1.5rem; /* Memberi indentasi pada ordered list */
+    }
+    .list-styled li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top shadow-sm">
@@ -52,7 +61,7 @@
   <main class="container mt-5 pt-5">
     <section id="detail-konsultasi" class="py-5">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto"> 
 
           <div class="mb-4">
             <a href="javascript:history.back()" class="btn btn-outline-secondary rounded-pill">
@@ -60,52 +69,79 @@
             </a>
           </div>
 
-          <h1 class="display-5 fw-bold mb-4">Konsultasi Pemasangan Wifi Profesional</h1>
-          <p class="lead text-muted mb-4">Rp 500.000 <small class="fw-light">/Sesi Konsultasi Awal</small></p>
+          <header class="mb-5 text-center"> 
+            <h1 class="display-5 fw-bold mb-3">Konsultasi Pemasangan Wifi Profesional</h1>
+            <p class="lead text-muted mb-4">Rp 500.000 <small class="fw-light">/Sesi Konsultasi Awal</small></p>
+          </header>
 
-          <div class="mb-5">
-            <img src="../images/konsultasi-pemasangan-hero.jpg" alt="Konsultasi Pemasangan Wifi Profesional FAST ONE" class="img-fluid rounded shadow mb-3"> <!-- GANTI GAMBAR -->
-            <p>Merencanakan pemasangan jaringan WiFi yang optimal bisa menjadi tantangan, baik untuk rumah, kantor, maupun area publik. Layanan konsultasi pemasangan WiFi kami membantu Anda dari tahap perencanaan hingga rekomendasi implementasi, memastikan Anda mendapatkan solusi jaringan nirkabel yang handal, aman, dan sesuai kebutuhan.</p>
+          <div class="row mb-5 align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <img src="../images/konsultasi-pemasangan-hero.jpg" alt="Konsultasi Pemasangan Wifi Profesional FAST ONE" class="img-fluid rounded shadow-lg"> <!-- Tambah shadow-lg -->
+            </div>
+            <div class="col-md-6">
+              <p class="fs-5">Merencanakan pemasangan jaringan WiFi yang optimal bisa menjadi tantangan, baik untuk rumah, kantor, maupun area publik. Layanan konsultasi pemasangan WiFi kami membantu Anda dari tahap perencanaan hingga rekomendasi implementasi, memastikan Anda mendapatkan solusi jaringan nirkabel yang handal, aman, dan sesuai kebutuhan.</p>
+            </div>
           </div>
 
-          <h2 class="mb-3"><i class="bi bi-list-check text-primary me-2"></i>Apa Saja yang Anda Dapatkan?</h2>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Analisis Kebutuhan Mendalam:</strong> Kami akan menggali kebutuhan spesifik Anda, termasuk jumlah pengguna, jenis perangkat, area cakupan yang diinginkan, dan jenis aktivitas online.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Rekomendasi Perangkat (Router/AP):</strong> Termasuk rekomendasi model router atau Access Point (AP) yang sesuai, seperti TP-Link seri AC atau merk lain, berdasarkan analisis kebutuhan dan budget Anda. Opsi bundle perangkat tersedia.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Desain Topologi Jaringan:</strong> Perencanaan tata letak penempatan router/AP untuk cakupan sinyal maksimal, minim interferensi, dan skalabilitas di masa depan (future-proof).</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Solusi ISP yang Akurat dan Efisien:</strong> Rekomendasi penyedia layanan internet (ISP) terbaik di lokasi Anda, berdasarkan ketersediaan layanan dan rekam jejak kualitas.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Edukasi Jaringan Wifi untuk Pengguna:</strong> Penjelasan dasar mengenai cara kerja WiFi, tips penempatan optimal, konfigurasi keamanan dasar, dan troubleshooting sederhana.</li>
-            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Perencanaan Keamanan Jaringan Awal:</strong> Rekomendasi untuk konfigurasi keamanan dasar seperti enkripsi WPA3, password yang kuat, dan pemisahan jaringan tamu (jika diperlukan).</li>
-             <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Laporan Rekomendasi Tertulis:</strong> Anda akan menerima dokumen berisi semua analisis, rekomendasi perangkat, desain topologi, dan estimasi biaya.</li>
-          </ul>
-
-          <h2 class="mb-3"><i class="bi bi-diagram-3-fill text-primary me-2"></i>Proses Konsultasi Kami:</h2>
-          <ol class="list-styled mb-4">
-            <li><strong>Sesi Awal (Discovery):</strong> Diskusi mendalam untuk memahami kebutuhan, ekspektasi, denah lokasi (jika ada), dan anggaran Anda. (Ini yang dicakup biaya Rp 500.000).</li>
-            <li><strong>Survei Lokasi (Opsional/Biaya Tambahan):</strong> Jika diperlukan, tim kami dapat melakukan survei langsung ke lokasi Anda untuk analisis yang lebih akurat mengenai interferensi, material bangunan, dan penempatan optimal.</li>
-            <li><strong>Analisis & Perancangan Solusi:</strong> Tim kami menganalisis data dan merancang solusi jaringan WiFi yang paling efektif.</li>
-            <li><strong>Presentasi & Diskusi Rekomendasi:</strong> Kami akan mempresentasikan hasil analisis dan rekomendasi solusi kepada Anda, lengkap dengan penjelasan teknis yang mudah dipahami.</li>
-            <li><strong>Pendampingan Implementasi (Opsional/Biaya Tambahan):</strong> Jika Anda setuju dengan solusi yang ditawarkan, kami dapat membantu dalam proses pengadaan perangkat, instalasi fisik, dan konfigurasi awal.</li>
-          </ol>
-
-          <div class="alert alert-info my-4" role="alert">
-            <i class="bi bi-info-circle-fill me-2"></i><strong>Investasi Awal yang Tepat:</strong> Konsultasi profesional di awal akan menghindarkan Anda dari biaya tak terduga dan masalah jaringan di kemudian hari. Biaya sesi awal Rp 500.000 dapat dikreditkan jika Anda melanjutkan dengan layanan implementasi dari kami.
+          <div class="card shadow-sm mb-4">
+            <div class="card-header bg-primary text-white">
+              <h2 class="mb-0 h4"><i class="bi bi-list-check me-2"></i>Apa Saja yang Anda Dapatkan?</h2>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Analisis Kebutuhan Mendalam:</strong> Kami akan menggali kebutuhan spesifik Anda, termasuk jumlah pengguna, jenis perangkat, area cakupan yang diinginkan, dan jenis aktivitas online.</li>
+                <li class="list-group-item px-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Rekomendasi Perangkat (Router/AP):</strong> Termasuk rekomendasi model router atau Access Point (AP) yang sesuai, seperti TP-Link seri AC atau merk lain, berdasarkan analisis kebutuhan dan budget Anda. Opsi bundle perangkat tersedia.</li>
+                <li class="list-group-item px-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Desain Topologi Jaringan:</strong> Perencanaan tata letak penempatan router/AP untuk cakupan sinyal maksimal, minim interferensi, dan skalabilitas di masa depan (future-proof).</li>
+                <li class="list-group-item px-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Solusi ISP yang Akurat dan Efisien:</strong> Rekomendasi penyedia layanan internet (ISP) terbaik di lokasi Anda, berdasarkan ketersediaan layanan dan rekam jejak kualitas.</li>
+                <li class="list-group-item px-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Edukasi Jaringan Wifi untuk Pengguna:</strong> Penjelasan dasar mengenai cara kerja WiFi, tips penempatan optimal, konfigurasi keamanan dasar, dan troubleshooting sederhana.</li>
+                <li class="list-group-item px-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Perencanaan Keamanan Jaringan Awal:</strong> Rekomendasi untuk konfigurasi keamanan dasar seperti enkripsi WPA3, password yang kuat, dan pemisahan jaringan tamu (jika diperlukan).</li>
+                <li class="list-group-item px-0"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Laporan Rekomendasi Tertulis:</strong> Anda akan menerima dokumen berisi semua analisis, rekomendasi perangkat, desain topologi, dan estimasi biaya.</li>
+              </ul>
+            </div>
           </div>
 
-          <h2 class="mb-3"><i class="bi bi-person-workspace text-primary me-2"></i>Mengapa Memilih Konsultasi FAST ONE?</h2>
-          <ul>
-            <li><strong>Keahlian Terbukti:</strong> Konsultan kami memiliki pengalaman dan sertifikasi di bidang jaringan.</li>
-            <li><strong>Solusi Objektif & Kustom:</strong> Rekomendasi kami didasarkan pada kebutuhan Anda, bukan terikat pada satu merk atau ISP.</li>
-            <li><strong>Pendekatan Holistik:</strong> Kami melihat dari sisi teknis, keamanan, hingga kemudahan penggunaan.</li>
-            <li><strong>Hemat Jangka Panjang:</strong> Desain yang tepat mengurangi risiko masalah, downtime, dan kebutuhan upgrade prematur.</li>
-          </ul>
+          <div class="card shadow-sm mb-4">
+            <div class="card-header bg-info text-dark">
+              <h2 class="mb-0 h4"><i class="bi bi-diagram-3-fill me-2"></i>Proses Konsultasi Kami:</h2>
+            </div>
+            <div class="card-body">
+              <ol class="list-group list-group-numbered"> 
+                <li class="list-group-item"><strong>Sesi Awal (Discovery):</strong> Diskusi mendalam untuk memahami kebutuhan, ekspektasi, denah lokasi (jika ada), dan anggaran Anda. (Ini yang dicakup biaya Rp 500.000).</li>
+                <li class="list-group-item"><strong>Survei Lokasi (Opsional/Biaya Tambahan):</strong> Jika diperlukan, tim kami dapat melakukan survei langsung ke lokasi Anda untuk analisis yang lebih akurat mengenai interferensi, material bangunan, dan penempatan optimal.</li>
+                <li class="list-group-item"><strong>Analisis & Perancangan Solusi:</strong> Tim kami menganalisis data dan merancang solusi jaringan WiFi yang paling efektif.</li>
+                <li class="list-group-item"><strong>Presentasi & Diskusi Rekomendasi:</strong> Kami akan mempresentasikan hasil analisis dan rekomendasi solusi kepada Anda, lengkap dengan penjelasan teknis yang mudah dipahami.</li>
+                <li class="list-group-item"><strong>Pendampingan Implementasi (Opsional/Biaya Tambahan):</strong> Jika Anda setuju dengan solusi yang ditawarkan, kami dapat membantu dalam proses pengadaan perangkat, instalasi fisik, dan konfigurasi awal.</li>
+              </ol>
+            </div>
+          </div>
 
-          <div class="text-center mt-5">
-            <h3 class="mb-3">Siap Merancang Jaringan Wifi Optimal Anda?</h3>
-            <a href="index.html#kontak?subjek=Permintaan Konsultasi Pemasangan Wifi" class="btn btn-primary btn-lg me-2 mb-2">
+          <div class="alert alert-primary d-flex align-items-center my-4" role="alert"> 
+            <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+            <div>
+              <strong>Investasi Awal yang Tepat:</strong> Konsultasi profesional di awal akan menghindarkan Anda dari biaya tak terduga dan masalah jaringan di kemudian hari. Biaya sesi awal Rp 500.000 dapat dikreditkan jika Anda melanjutkan dengan layanan implementasi dari kami.
+            </div>
+          </div>
+
+          <div class="card shadow-sm mb-5">
+            <div class="card-header bg-light">
+                <h2 class="mb-0 h4"><i class="bi bi-person-workspace text-primary me-2"></i>Mengapa Memilih Konsultasi FAST ONE?</h2>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled"> 
+                <li class="mb-2"><i class="bi bi-patch-check-fill text-primary me-2"></i><strong>Keahlian Terbukti:</strong> Konsultan kami memiliki pengalaman dan sertifikasi di bidang jaringan.</li>
+                <li class="mb-2"><i class="bi bi-sliders text-primary me-2"></i><strong>Solusi Objektif & Kustom:</strong> Rekomendasi kami didasarkan pada kebutuhan Anda, bukan terikat pada satu merk atau ISP.</li>
+                <li class="mb-2"><i class="bi bi-shield-lock-fill text-primary me-2"></i><strong>Pendekatan Holistik:</strong> Kami melihat dari sisi teknis, keamanan, hingga kemudahan penggunaan.</li>
+                <li><i class="bi bi-graph-up-arrow text-primary me-2"></i><strong>Hemat Jangka Panjang:</strong> Desain yang tepat mengurangi risiko masalah, downtime, dan kebutuhan upgrade prematur.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center mt-5 p-4 bg-light rounded shadow-sm">
+            <h3 class="mb-4 fw-semibold">Siap Merancang Jaringan Wifi Optimal Anda?</h3>
+            <a href="../index.html#kontak?subjek=Permintaan Konsultasi Pemasangan Wifi" class="btn btn-primary btn-lg me-md-2 mb-2 mb-md-0"> 
                 <i class="bi bi-calendar2-check-fill me-2"></i>Jadwalkan Sesi Konsultasi
             </a>
-            <a href="tel:0881026461696" class="btn btn-outline-success btn-lg mb-2">
+            <a href="https://wa.me/62881026461696" class="btn btn-success btn-lg" target="_blank"> 
                 <i class="bi bi-whatsapp me-2"></i>Tanya Cepat via WhatsApp
             </a>
           </div>
@@ -114,9 +150,17 @@
     </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+        <p class="mb-0">© <span id="currentYear"></span> FAST ONE. Semua Hak Dilindungi.</p>
+        <p class="mb-0 small">Layanan Jaringan Profesional</p>
+    </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </script>
+  <!-- Jika script.js Anda ada di ../script.js, uncomment baris di bawah dan hapus/sesuaikan skrip di atas -->
   <script src="../script.js"></script>
 </body>
 </html>
