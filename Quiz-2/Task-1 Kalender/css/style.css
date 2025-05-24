@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 90vh;       
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; 
+    padding: 20px; 
+}
+
+.calendar-wrapper { 
+    padding: 30px 50px; 
+    background-color: #ffffff; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.15); 
+    border-radius: 8px; 
+}
+
+.calendar-container {
+    width: 450px; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white; 
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1em; 
+}
+
+.navigation a {
+    text-decoration: none;
+    color: purple; 
+    font-weight: normal; 
+    padding: 5px 8px;
+    font-size: 0.9em;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.month-year {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.1em; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px; 
+    text-align: center;
+    height: 35px; 
+    box-sizing: border-box;
+    font-size: 0.85em; 
+}
+
+th {
+    background-color: #ffffff; 
+    font-weight: bolder; 
+    color: #000000; 
+}
+
+th:first-child, td:first-child {
+    font-weight: normal;
+}
+
+.today { 
+    background-color: red !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.current-day-highlight { 
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.empty-day {
+    background-color: #f9f9f9;
+    border-color: transparent; 
+}
