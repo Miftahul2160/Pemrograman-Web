@@ -70,10 +70,6 @@ th {
     color: #000000; 
 }
 
-th:first-child, td:first-child {
-    font-weight: normal;
-}
-
 .today { 
     background-color: red !important;
     color: white !important;
