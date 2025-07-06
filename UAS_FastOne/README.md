@@ -4,8 +4,6 @@ Selamat datang di repositori proyek FAST ONE! Ini adalah aplikasi web lengkap ya
 
 Aplikasi ini dirancang dengan alur kerja yang jelas, memisahkan antara tampilan publik, dasbor pelanggan, dan panel admin yang kuat untuk mengelola seluruh aspek bisnis.
 
-![Tampilan Halaman Beranda](https://i.imgur.com/gK9qQ4w.png)
-
 ---
 
 ## Fitur Utama
