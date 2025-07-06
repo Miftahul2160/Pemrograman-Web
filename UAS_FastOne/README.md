@@ -39,7 +39,7 @@ Aplikasi ini dirancang dengan alur kerja yang jelas, memisahkan antara tampilan 
 
 ## Teknologi yang Digunakan
 
--   **Backend**: Laravel 11
+-   **Backend**: Laravel Framework 12.19.3
 -   **Frontend**: Blade, Bootstrap 5, JavaScript
 -   **Autentikasi**: Laravel Breeze
 -   **Database**: MySQL
@@ -52,7 +52,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini di lingkungan lokal 
 
 ### Prasyarat
 
--   PHP 8.2 atau lebih baru
+-   PHP 8.3.6
 -   Composer
 -   Node.js & NPM
 -   Server lokal (XAMPP, Laragon, MAMP, dll.)
