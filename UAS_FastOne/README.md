@@ -1,61 +1,164 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# FAST ONE - Landing Page & Sistem Manajemen ISP
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Selamat datang di repositori proyek FAST ONE! Ini adalah aplikasi web lengkap yang dibangun menggunakan Laravel, berfungsi sebagai halaman marketing (landing page) untuk penyedia layanan internet (ISP) sekaligus sistem manajemen internal (panel admin) dan portal pelanggan.
 
-## About Laravel
+Aplikasi ini dirancang dengan alur kerja yang jelas, memisahkan antara tampilan publik, dasbor pelanggan, dan panel admin yang kuat untuk mengelola seluruh aspek bisnis.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![Tampilan Halaman Beranda](https://i.imgur.com/gK9qQ4w.png)
 
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Fitur Utama
 
-## Learning Laravel
+### 1. Halaman Publik (Marketing)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   **Halaman Beranda Dinamis**: Menampilkan semua layanan dan paket yang datanya diambil langsung dari database.
+-   **Detail Paket & Layanan**: Halaman terpisah untuk setiap paket dan layanan dengan deskripsi lengkap.
+-   **Desain Responsif**: Tampilan yang menyesuaikan dengan baik di perangkat desktop maupun mobile.
+-   **Dark Mode**: Tombol untuk mengubah tema antara mode terang dan gelap, dengan preferensi yang tersimpan di browser.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 2. Sistem Autentikasi & Peran Pengguna
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   **Login & Register**: Sistem pendaftaran dan login yang aman menggunakan Laravel Breeze.
+-   **Pemisahan Peran**: Sistem membedakan antara **Admin** dan **Pelanggan** biasa, dengan hak akses yang berbeda.
+-   **Proteksi Rute**: Halaman admin dan pelanggan dilindungi oleh middleware, memastikan hanya pengguna yang sudah login yang dapat mengaksesnya.
 
-## Laravel Sponsors
+### 3. Portal Pelanggan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   **Dashboard Pelanggan**: Setelah login, pelanggan akan diarahkan ke halaman "Akun Saya".
+-   **Pendaftaran Mandiri**: Pelanggan dapat memilih paket atau layanan dari halaman publik dan mengajukan permintaan berlangganan/layanan melalui form.
+-   **Melihat Status Langganan**: Pelanggan dapat melihat detail paket yang mereka gunakan dan status langganan mereka (misalnya, "Aktif" atau "Menunggu Pemasangan").
 
-### Premium Partners
+### 4. Panel Admin
 
--   **[Vehikl](https://vehikl.com)**
--   **[Tighten Co.](https://tighten.co)**
--   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
--   **[64 Robots](https://64robots.com)**
--   **[Curotec](https://www.curotec.com/services/technologies/laravel)**
--   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
--   **[Redberry](https://redberry.international/laravel-development)**
--   **[Active Logic](https://activelogic.com)**
+-   **Dashboard Admin**: Halaman utama untuk admin yang memberikan gambaran umum dan navigasi ke semua fitur manajemen.
+-   **CRUD Paket**: Admin dapat **Membuat (Create)**, **Membaca (Read)**, **Memperbarui (Update)**, dan **Menghapus (Delete)** data paket internet.
+-   **CRUD Pelanggan**: Admin dapat mengelola data semua pelanggan, termasuk mengubah paket langganan dan memperbarui status mereka (misalnya, dari "Menunggu Pemasangan" menjadi "Aktif").
+-   **Manajemen Konten Layanan**: Admin dapat mengedit konten halaman-halaman informatif seperti "Upgrade & Downgrade" dan "Konsultasi Jaringan".
+-   **Manajemen Permintaan**: Admin dapat melihat dan memproses semua permintaan layanan yang masuk dari pelanggan, serta mengubah statusnya (misalnya, dari "Baru" menjadi "Sudah Dihubungi" atau "Selesai").
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Teknologi yang Digunakan
 
-## Code of Conduct
+-   **Backend**: Laravel 11
+-   **Frontend**: Blade, Bootstrap 5, JavaScript
+-   **Autentikasi**: Laravel Breeze
+-   **Database**: MySQL
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## Instruksi Instalasi & Setup
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Berikut adalah langkah-langkah untuk menjalankan proyek ini di lingkungan lokal Anda.
 
-## License
+### Prasyarat
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+-   PHP 8.2 atau lebih baru
+-   Composer
+-   Node.js & NPM
+-   Server lokal (XAMPP, Laragon, MAMP, dll.)
+-   Database MySQL
+
+### Langkah-langkah Instalasi
+
+1.  **Clone Repository**
+    Buka terminal Anda dan jalankan perintah berikut:
+
+    ```bash
+    git clone [https://github.com/username/nama-repositori.git](https://github.com/username/nama-repositori.git)
+    cd nama-repositori
+    ```
+
+2.  **Instal Dependensi PHP**
+
+    ```bash
+    composer install
+    ```
+
+3.  **Buat File Environment**
+    Salin file `.env.example` menjadi `.env`.
+
+    ```bash
+    cp .env.example .env
+    ```
+
+4.  **Generate Application Key**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+5.  **Konfigurasi Database**
+
+    -   Buka file `.env` yang baru saja Anda buat.
+    -   Buat sebuah database baru di server lokal Anda (misalnya, melalui phpMyAdmin) dengan nama `uas_fastone`.
+    -   Sesuaikan variabel database di file `.env`:
+        ```env
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=uas_fastone
+        DB_USERNAME=root
+        DB_PASSWORD=
+        ```
+
+6.  **Jalankan Migrasi & Seeder**
+    Perintah ini akan membuat semua tabel yang dibutuhkan di database Anda dan mengisinya dengan data awal (paket, layanan, dll.).
+
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
+
+7.  **Instal Dependensi JavaScript**
+
+    ```bash
+    npm install
+    ```
+
+8.  **Kompilasi Aset Frontend**
+
+    ```bash
+    npm run dev
+    ```
+
+9.  **Jalankan Server Pengembangan**
+    ```bash
+    php artisan serve
+    ```
+
+Sekarang, aplikasi Anda sudah berjalan di `http://127.0.0.1:8000`.
+
+---
+
+## Panduan Penggunaan Aplikasi
+
+### 1. Membuat Akun Admin
+
+Secara default, semua pengguna yang mendaftar akan memiliki peran 'pelanggan'. Untuk membuat akun admin pertama Anda:
+
+1.  Daftar akun baru melalui halaman `/register`.
+2.  Buka database Anda melalui phpMyAdmin.
+3.  Masuk ke tabel `users`.
+4.  Cari baris data akun yang baru saja Anda buat.
+5.  Ubah nilai di kolom `role` dari `pelanggan` menjadi `admin`.
+6.  Sekarang, saat Anda login dengan akun tersebut, Anda akan diarahkan ke panel admin.
+
+### 2. Alur Kerja Pelanggan
+
+1.  Buka halaman `/register` untuk membuat akun baru.
+2.  Setelah login, Anda akan diarahkan ke halaman "Akun Saya". Di sini, akan ada pemberitahuan bahwa Anda belum berlangganan.
+3.  Klik tombol "Lihat Pilihan Paket" atau navigasi ke halaman beranda (`/beranda`).
+4.  Pilih salah satu paket atau layanan, lalu klik "Lihat Detail".
+5.  Di halaman detail, klik tombol **"Berlangganan Paket Ini"** atau isi form **"Ajukan Permintaan Layanan"**.
+6.  Lengkapi form yang muncul dan kirim.
+7.  Anda akan diarahkan kembali ke halaman "Akun Saya" dengan notifikasi bahwa permintaan Anda telah diterima dan status langganan/permintaan Anda adalah "Menunggu Pemasangan" atau "Baru".
+
+### 3. Alur Kerja Admin
+
+1.  Login dengan akun admin Anda. Anda akan diarahkan ke `/dashboard`.
+2.  Gunakan menu navigasi di atas untuk mengakses berbagai panel:
+    -   **Kelola Paket**: Tambah, lihat, edit, atau hapus paket internet.
+    -   **Kelola Pelanggan**: Lihat daftar pelanggan. Klik "Edit" untuk mengubah detail langganan mereka, terutama untuk mengubah **Status** dari "Menunggu Pemasangan" menjadi "Aktif".
+    -   **Kelola Layanan**: Edit konten teks dan judul dari halaman-halaman informatif.
+    -   **Kelola Permintaan**: Lihat semua permintaan layanan yang masuk dari pelanggan. Klik "Proses" untuk melihat detailnya dan mengubah statusnya.
