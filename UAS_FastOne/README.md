@@ -64,8 +64,8 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini di lingkungan lokal 
     Buka terminal Anda dan jalankan perintah berikut:
 
     ```bash
-    git clone [https://github.com/username/nama-repositori.git](https://github.com/username/nama-repositori.git)
-    cd nama-repositori
+    git clone https://github.com/Miftahul2160/Pemrograman-Web.git
+    cd Pemrograman-Web
     ```
 
 2.  **Instal Dependensi PHP**
