@@ -4,9 +4,9 @@ Aplikasi API untuk sistem pencari kerja yang dibangun dengan Laravel. Aplikasi i
 
 ## Nama Kelompok:
 
--   3012310010 Faiz Nurullah
--   3012310023 Muhammad Muqoffin Nuha
--   3012310005 Ari Setia Hinanda
+-   Andri Darmawan 3012310004
+-   Muhammad Fakhrudin 3012310043
+-   Miftahul Ulum 3012310705
 
 ## Fitur Utama
 
@@ -78,15 +78,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-### 6. Import Database (Alternative)
-
-Jika tersedia file `db-dump.sql`:
-
-```bash
-mysql -u your_username -p job_seekers < db-dump.sql
-```
-
-### 7. Jalankan Server
+### 6. Jalankan Server
 
 ```bash
 # Development server
@@ -95,7 +87,7 @@ php artisan serve
 # Server akan berjalan di http://127.0.0.1:8000
 ```
 
-### 8. Build Assets (Jika diperlukan)
+### 7. Build Assets (Jika diperlukan)
 
 ```bash
 # Development
