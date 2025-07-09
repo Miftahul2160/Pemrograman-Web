@@ -65,7 +65,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini di lingkungan lokal 
 
     ```bash
     git clone https://github.com/Miftahul2160/Pemrograman-Web.git
-    cd Pemrograman-Web
+    cd Pemrograman-Web/UAS_FastOne/
     ```
 
 2.  **Instal Dependensi PHP**
