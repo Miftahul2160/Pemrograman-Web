@@ -1,3 +1,8 @@
+# Anggota Kelompok :
+    1. Andri Darmawan (3012310004)
+    2. Muhammad Fakhrudin (3012310043)
+    3. Miftahul Ulum (3012310705)
+
 # FAST ONE - Landing Page & Sistem Manajemen ISP
 
 Selamat datang di repositori proyek FAST ONE! Ini adalah aplikasi web lengkap yang dibangun menggunakan Laravel, berfungsi sebagai halaman marketing (landing page) untuk penyedia layanan internet (ISP) sekaligus sistem manajemen internal (panel admin) dan portal pelanggan.
